@@ -1,0 +1,3 @@
+﻿When I know Python, compact syntax and elegant writing style beyond what I think. Because the program languages what I know and use ,like C, C++, have strict and complex syntax, but are short of writing style, they have stronger functions, if you see the codes written by them after a long time, clearly see them may isn’t easy. 
+
+Python is good to read, because it has strict writing style, make reading it more easily, meanwhile, it looks more beautifully.
