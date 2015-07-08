@@ -2,18 +2,18 @@
  * @Author: darkless
  * @Date:   2015-06-19 16:35:46
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-07-02 14:43:54
+ * @Last Modified time: 2015-07-07 16:40:17
  */
 'use strict';
 
 function ajax(url, fnSucc, fnFaild) {
     //1.创建对象
     if (window.XMLHttpRequest) {
-        var ajax = new XMLHttpRequest;
+        var oAjax = new XMLHttpRequest;
     } else {
-        var ajax = ActiveXObject(Microsoft.X)
+        var oAjax = ActiveXObject(Microsoft.X)
     }
-    // console.log(oAjax);
+    console.log(oAjax);
     //2.连接服务器
     //open(方法，文件路径，异步传输)
     oAjax.open("GET", url, true);

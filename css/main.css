@@ -2,7 +2,64 @@
 * @Author: darkless
 * @Date:   2015-06-29 15:38:58
 * @Last Modified by:   darkless
-* @Last Modified time: 2015-06-30 22:16:52
+* @Last Modified time: 2015-07-08 16:09:56
 */
 
+/*Initial*/
 
+body{
+    font-family: 'Open Sans','helvetica',arial,sans-serif;
+    font-weight: 300;
+    color: #62686f;
+}
+
+div#container{
+    width: 960px;
+    background-color: brown;
+}
+
+div.cont_left,
+div.cont_right{
+    float: left;
+}
+
+/*Part_Left*/
+div.cont_left{
+    background-color: pink;
+    width: 40%;
+    padding: 0 30px;
+}
+
+div.cont_left header{
+    width: 100%;
+}
+
+.aboutCreater header img{
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin: 10px auto;
+}
+
+/*Part_Right*/
+div.cont_right{
+    background-color: #ccc;
+    width: 50%;
+}
+
+h2{
+    /*margin-top: 10px;
+    */
+    margin: 0 30px;
+    margin-top: 60px;
+}
+
+.py, .js, .blog{
+    margin: 30px 30px;
+}
+
+/*Part_footer*/
+footer{
+    clear: both;
+}
