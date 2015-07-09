@@ -2,7 +2,7 @@
  * @Author: darkless
  * @Date:   2015-07-01 12:19:47
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-07-08 16:06:06
+ * @Last Modified time: 2015-07-09 11:42:39
  */
 'use strict';
 window.onload = function() {
@@ -15,9 +15,7 @@ window.onload = function() {
     console.log(oDivJs);
     console.log(oDivBl);
     //create a object of ajax
-    xmlHttp("txt/About Blog.txt", oDivBl, function(){
-        alert("xmlHttp.responseText");
-    });
+    xmlHttp("txt/About Blog.txt", oDivBl);
     xmlHttp("txt/About Python.txt", oDivPy);
     xmlHttp("txt/About Javascript.txt", oDivJs);
 }
@@ -37,8 +35,12 @@ function xmlHttp(url, obj, fnSucc1) {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             obj.innerHTML = xmlHttp.responseText;
             obj.style.lineHeight = 30 + "px";
+            obj.style.padding = 60 + "px";
+            obj.style.paddingTop = 30 + "px";
             // var arg1 = xmlHttp.responseText;
-            fnSucc1(xmlHttp.responseText);
+            if (fnSucc1) {
+                fnSucc1(xmlHttp.responseText);
+            }
             // alert(fnSucc);
         }
     }

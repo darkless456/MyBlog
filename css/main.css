@@ -2,64 +2,109 @@
 * @Author: darkless
 * @Date:   2015-06-29 15:38:58
 * @Last Modified by:   darkless
-* @Last Modified time: 2015-07-08 16:09:56
+* @Last Modified time: 2015-07-09 16:40:26
 */
 
 /*Initial*/
 
 body{
     font-family: 'Open Sans','helvetica',arial,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #62686f;
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+header#header{
+    padding: 60px;
+    margin: 15px 0;
+    height: 120px;
+    background-color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px yellowgreen;
+    box-shadow: 0 0 15px #000;
+    border-radius: 10px;
+}
+
+header p{
+    text-align: center;
 }
 
 div#container{
     width: 960px;
-    background-color: brown;
+    margin: 6px auto;
 }
 
 div.cont_left,
 div.cont_right{
-    float: left;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000;
+    box-sizing: border-box;
 }
 
 /*Part_Left*/
 div.cont_left{
-    background-color: pink;
-    width: 40%;
-    padding: 0 30px;
+    float: left;
+    background-color: #fff;
+    width: 29%;
+    padding: 30px 50px;
+    margin-top: 60px;
+}
+
+.aboutCreater{
+    font-weight: 400;
+}
+
+.aboutCreater{
+    margin-top: 60px;
+    font-size: 10px;
+    text-align: center;
 }
 
 div.cont_left header{
     width: 100%;
 }
 
+p.name{
+    font-weight: 600;
+    font-size: 18px;
+    text-shadow: 0px 0px 5px #fff;
+}
+
 .aboutCreater header img{
     border-radius: 50%;
-    width: 30%;
-    height: 30%;
+    width: 70%;
+    height: 70%;
     display: block;
-    margin: 10px auto;
+    margin: 0 auto;
+    margin-top: -85%;
+    box-shadow: 0 0 15px #000;
 }
 
 /*Part_Right*/
 div.cont_right{
-    background-color: #ccc;
-    width: 50%;
+    float: right;
+    background-color: #fff;
+    width: 60%;
 }
 
 h2{
-    /*margin-top: 10px;
-    */
-    margin: 0 30px;
-    margin-top: 60px;
+    margin: 0 60px;
+    margin-top: 30px;
 }
 
-.py, .js, .blog{
-    margin: 30px 30px;
+.cont_right{
+    padding-top: 60px;
 }
 
 /*Part_footer*/
 footer{
     clear: both;
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 30px;
 }
