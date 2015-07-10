@@ -1,5 +1,5 @@
-﻿Hi, everyone who come to Snow Halation, I'm Kevin, was the Snow Halation's owner, Welcome to you!
+﻿<p>Hi, everyone who come to Snow Halation, I'm Kevin, was the Snow Halation's owner, Welcome to you!</p>
 
-I’m a beginner of front web development, set up the blog in order to prove my abilities, about JavaScript, CSS, HTML5 and Python.  I will write down what I has learned from study, example some small skills, basic theory and so on.  Beyond that, I also record inspiration in daily life or some interesting things.  If want to contact me, sent e-mail to narcissu456@gmail.com is a good method, I glad to chat with you.
+<p>I’m a beginner of front web development, set up the blog in order to prove my abilities, about JavaScript, CSS, HTML5 and Python.  I will write down what I has learned from study, example some small skills, basic theory and so on.  Beyond that, I also record inspiration in daily life or some interesting things.  If want to contact me, sent e-mail to narcissu456@gmail.com is a good method, I glad to chat with you.</p>
 
-The articles of Snow Halation are written by myself, if you like some of them, you can transmit them everywhere but business.  Thank you!
+<p>The articles of Snow Halation are written by myself, if you like some of them, you can transmit them everywhere but business.  Thank you!</p>

@@ -1,0 +1,15 @@
+/* 
+* @Author: darkless
+* @Date:   2015-07-09 20:22:14
+* @Last Modified by:   darkless
+* @Last Modified time: 2015-07-10 14:15:15
+*/
+
+
+div.content{
+    text-align: justify;
+    text-indent: 20px;
+    padding: 30px 60px;
+    line-height: 35px;
+    word-wrap: break-word;
+}

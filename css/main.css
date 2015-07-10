@@ -2,7 +2,7 @@
 * @Author: darkless
 * @Date:   2015-06-29 15:38:58
 * @Last Modified by:   darkless
-* @Last Modified time: 2015-07-09 16:40:26
+* @Last Modified time: 2015-07-10 17:56:30
 */
 
 /*Initial*/
@@ -19,12 +19,12 @@ body{
 }
 
 header#header{
-    padding: 60px;
+    padding: 30px 60px;
     margin: 15px 0;
     height: 120px;
     background-color: #fff;
     text-transform: uppercase;
-    text-shadow: 0 0 10px yellowgreen;
+    text-shadow: 0 0 10px #007799;
     box-shadow: 0 0 15px #000;
     border-radius: 10px;
 }
@@ -49,9 +49,9 @@ div.cont_right{
 div.cont_left{
     float: left;
     background-color: #fff;
-    width: 29%;
+    width: 35%;
     padding: 30px 50px;
-    margin-top: 60px;
+    margin-top: 65px;
 }
 
 .aboutCreater{
@@ -76,11 +76,12 @@ p.name{
 
 .aboutCreater header img{
     border-radius: 50%;
-    width: 70%;
-    height: 70%;
+    width: 150px;
     display: block;
     margin: 0 auto;
-    margin-top: -85%;
+    margin-top: -160px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
     box-shadow: 0 0 15px #000;
 }
 
@@ -94,6 +95,7 @@ div.cont_right{
 h2{
     margin: 0 60px;
     margin-top: 30px;
+    text-transform: uppercase;
 }
 
 .cont_right{

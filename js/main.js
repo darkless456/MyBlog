@@ -2,24 +2,23 @@
  * @Author: darkless
  * @Date:   2015-07-01 12:19:47
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-07-09 11:42:39
+ * @Last Modified time: 2015-07-10 14:07:37
  */
 'use strict';
 window.onload = function() {
+    //argument statement
     var oDiv = document.getElementById("right_part");
-    var oDivPy = getByClass(oDiv, "py")[0];
-    var oDivJs = getByClass(oDiv, "js")[0];
-    var oDivBl = getByClass(oDiv, "blog")[0];
-    console.log(oDiv);
-    console.log(oDivPy);
-    console.log(oDivJs);
-    console.log(oDivBl);
-    //create a object of ajax
-    xmlHttp("txt/About Blog.txt", oDivBl);
-    xmlHttp("txt/About Python.txt", oDivPy);
-    xmlHttp("txt/About Javascript.txt", oDivJs);
-}
+    var oDivCont = getByClass(oDiv, "content");
 
+    //content get from server by ajax
+    xmlHttp("txt/About Python.txt", oDivCont[0]);
+    xmlHttp("txt/About Javascript.txt", oDivCont[1]);
+    xmlHttp("txt/About Blog.txt", oDivCont[2]);
+
+    //load outer css for content
+    loadCss("textStyle");
+}
+//ajax
 function xmlHttp(url, obj, fnSucc1) {
     var xmlHttp;
     if (window.XMLHttpRequest) {
@@ -27,25 +26,26 @@ function xmlHttp(url, obj, fnSucc1) {
     } else {
         var xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    // console.log(xmlHttp);
     // connect to server
     xmlHttp.open("GET", url, true);
     xmlHttp.send();
     xmlHttp.onreadystatechange = function() {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             obj.innerHTML = xmlHttp.responseText;
-            obj.style.lineHeight = 30 + "px";
-            obj.style.padding = 60 + "px";
-            obj.style.paddingTop = 30 + "px";
-            // var arg1 = xmlHttp.responseText;
             if (fnSucc1) {
                 fnSucc1(xmlHttp.responseText);
             }
-            // alert(fnSucc);
         }
     }
 }
-//Text_Output
-//oDivPy.innerHTML = 
-//oDivJs.innerHTMl = 
-//oDivBl.innerHTML =
+
+//loadCss
+function loadCss(file){
+    var head = document.getElementsByTagName("head").item(0);
+    var css = document.createElement("link")
+    css.rel = "stylesheet";
+    css.type = "text/css";
+    css.href = "css/" + file + ".css";
+    css.id = file;
+    head.appendChild(css);
+}
