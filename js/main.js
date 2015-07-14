@@ -2,7 +2,7 @@
  * @Author: darkless
  * @Date:   2015-07-01 12:19:47
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-07-13 16:40:35
+ * @Last Modified time: 2015-07-14 15:19:31
  */
 'use strict';
 window.onload = function() {
@@ -28,7 +28,7 @@ window.onload = function() {
     oUl_Imgs.onmouseover = function() {
         oUl_Imgs.style.cursor = "pointer";
         clearInterval(timer);
-        oUl_Imgs.onclick = function(ev){
+        oUl_Imgs.onclick = function(ev) {
             oBody.style.backgroundImage = "url(" + ev.target.src + ")";
         }
     }
@@ -41,6 +41,19 @@ window.onload = function() {
             oUl_Imgs.style.left = 0;
         }
         oUl_Imgs.style.left = oUl_Imgs.offsetLeft + speed + "px";
+    }
+    //navigation bar effects
+    var oUl_Nav = getByClass(document, "nav_ul")[0];
+    var aLi_Nav = oUl_Nav.getElementsByTagName("li");
+    var aA_Nav = oUl_Nav.getElementsByTagName("a");
+    for(var i=0; i<aLi_Nav.length; i++){
+        aLi_Nav[i].index = i;
+        aLi_Nav[i].onmouseover = function(){
+            aLi_Nav[this.index].id = "mouse";
+        }
+        aLi_Nav[i].onmouseout = function(){
+            aLi_Nav[this.index].id = '';
+        }
     }
 }
 //ajax

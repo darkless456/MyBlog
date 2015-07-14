@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/onMouseStyle.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -15,6 +16,14 @@
             <h1>Snow Halation</h1>
             <p id="intro">The Blog of designer, it isn't so hard, but so interesting.</p>
         </header><!-- /header -->
+        <nav id="main_nav">
+            <ul class="nav_ul">
+                <li class="nav_li"><a href="javascript:;">home</a></li>
+                <li class="nav_li"><a href="javascript:;">python</a></li>
+                <li class="nav_li"><a href="html/index_js.html">javascript</a></li>
+                <li class="nav_li"><a href="javascript:;">contact</a></li>
+            </ul>
+        </nav>
         <div id="left_part" class="content_div cont_left">
             <section class="left_side aboutCreater">
                 <header>
@@ -36,8 +45,12 @@
                 </div>
             </section>
             <section class="left_side aboutDiscuession">
-                <textarea class="discuession"></textarea>
-                <button type="submit" class="btn btn_success">Submit</button>
+                <form action="" accept-charset="utf-8">
+                    <label for="discuession">Leave a Message</label>
+                    <textarea class="discuession"></textarea>
+                    <label>e-mail<input type="text" name="email" value=""></label>
+                    <button type="submit" class="btn btn_success">submit</button>
+                </form>
             </section>
         </div>
         <div id="right_part" class="content_div cont_right">
