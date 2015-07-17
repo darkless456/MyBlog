@@ -1,5 +1,9 @@
 # MyBlog -- Snow Halation
 
+####Jul 15 2015 Update
+* Add navigation bar icons
+* Use jquery javacript library build child pages
+
 ####Jul 14 2015 Update
 * Add child page, index_py.html and index_js.html, building them finished as soon as.
 * Add navigation bar in main page

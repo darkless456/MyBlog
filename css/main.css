@@ -2,7 +2,7 @@
 * @Author: darkless
 * @Date:   2015-06-29 15:38:58
 * @Last Modified by:   darkless
-* @Last Modified time: 2015-07-14 17:03:30
+* @Last Modified time: 2015-07-15 14:28:49
 */
 
 /*Initial*/
@@ -16,6 +16,10 @@ body{
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
+}
+
+title{
+    text-transform: capitalize;
 }
 
 header#header{
@@ -205,6 +209,15 @@ h2{
     margin: 0 60px;
     margin-top: 30px;
     text-transform: uppercase;
+}
+
+#right_part a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#right_part a:visited{
+    color: inherit;
 }
 
 .content::after{
