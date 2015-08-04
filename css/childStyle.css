@@ -1,0 +1,105 @@
+/* 
+* @Author: darkless
+* @Date:   2015-07-21 17:33:08
+* @Last Modified by:   darkless
+* @Last Modified time: 2015-08-04 15:05:36
+*/
+
+h3{
+    text-transform: capitalize;
+}
+
+ul, ol{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden;
+    */
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.dis_btn{
+    display: block;
+    margin: 0 auto;
+}
+
+.box_border{
+    box-sizing: border-box;
+    box-shadow: 0 0 15px #000;
+    border-radius: 5px;
+}
+
+div#content{
+    margin: 15px 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 1px 120px;
+}
+
+.h-height{
+    height: 1100px;
+}
+
+.m-height{
+    height: 550px;
+}
+
+.s-height{
+    height: 300px;
+}
+
+.content_sec{
+    margin-top: 120px;
+}
+
+.content_code{
+    display: block;
+    width: 80%;
+    background-color: #F5F5F5;
+    font-size: 16px;
+    resize: none;
+    padding: 30px;
+    margin: 15px auto;
+    overflow-y: hidden;
+}
+
+.display_none{
+    display: none;
+}
+
+#content h2{
+    margin: 30px 0;
+}
+
+.content_txt{
+    text-align: left;
+}
+
+.content_arti{
+    text-align: center;
+}
+
+ol.img_scroll_ol{
+    position: absolute;
+    z-index: 999;
+}
+
+ul.img_scroll_ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.img_scroll_ul li{
+    float: left;
+}
+
+.img_scroll_ul li img{
+    height: 320px;
+    width: 569px;
+}

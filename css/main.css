@@ -2,7 +2,7 @@
 * @Author: darkless
 * @Date:   2015-06-29 15:38:58
 * @Last Modified by:   darkless
-* @Last Modified time: 2015-07-15 14:28:49
+* @Last Modified time: 2015-08-04 14:50:49
 */
 
 /*Initial*/
@@ -33,8 +33,19 @@ header#header{
     border-radius: 5px;
 }
 
+pre{
+    font: inherit;
+    word-break: break-all;
+    word-wrap: break-word;
+    line-height: inherit;
+}
+
 header p{
     text-align: center;
+}
+
+p#intro{
+    text-transform: capitalize;
 }
 
 div#container{
@@ -71,6 +82,15 @@ div.cont_right{
     color: #fff;
     background-color: #5cb85c;
     border-color: #4cae4c;
+}
+
+.btn_primary{
+    background-image: linear-gradient(to bottom, #337AB7 0px, #265A88 100%);
+    background-repeat: repeat-x;
+    border-color: #245580;
+    background-color: #337AB7;
+    border-color: #2E6DA4;
+    color: #FFFFFF;
 }
 
 /*Part_Nav*/
@@ -208,7 +228,16 @@ div.cont_right{
 h2{
     margin: 0 60px;
     margin-top: 30px;
+    text-align: center;
     text-transform: uppercase;
+}
+
+h2::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    border-bottom: 2px solid #000;
 }
 
 #right_part a{
@@ -239,4 +268,22 @@ footer{
     font-size: 12px;
     font-weight: 400;
     padding-top: 30px;
+}
+
+/*------------------------------------------------*/
+/*Child_pages CSS*/
+div.img_scroll_div{
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px #000;
+    border-radius: 5px;
+}
+ul.img_scroll_ul{
+    box-sizing: border-box;
+    background-color: pink;
+    height: 320px;
+    position: relative;
 }

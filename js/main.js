@@ -2,7 +2,7 @@
  * @Author: darkless
  * @Date:   2015-07-01 12:19:47
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-07-15 17:27:49
+ * @Last Modified time: 2015-07-22 16:51:20
  */
 'use strict';
 window.onload = function() {
@@ -14,7 +14,7 @@ window.onload = function() {
     xmlHttp("txt/About JavaScript.txt", oArt[1]);
     xmlHttp("txt/About Blog.txt", oArt[2]);
     //load outer css for content
-    loadCss("textStyle");
+    myLoadCss("textStyle");
     //load scrolling images
     var oBody = document.getElementsByTagName("body")[0];
     var oDiv_Imgs = getByClass(document, "imgs_div");
@@ -77,16 +77,16 @@ function xmlHttp(url, obj, fnSucc1) {
     }
 }
 //loadCss
-function loadCss(file) {
-    var head = document.getElementsByTagName("head").item(0);
-    var css = document.createElement("link")
-    css.rel = "stylesheet";
-    css.type = "text/css";
-    css.href = "css/" + file + ".css";
-    css.id = file;
-    head.appendChild(css);
-}
-//getbyclass
+// function loadCss(file) {
+//     var head = document.getElementsByTagName("head").item(0);
+//     var css = document.createElement("link");
+//     css.rel = "stylesheet";
+//     css.type = "text/css";
+//     css.href = "css/" + file + ".css";
+//     css.id = file;
+//     head.appendChild(css);
+// }
+//getbyclass replace by getElementsByClassName
 function getByClass(obj, sClass) {
     var tmp = obj.getElementsByTagName("*");
     var aResult = [];
