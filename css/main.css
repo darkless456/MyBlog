@@ -2,7 +2,7 @@
 * @Author: darkless
 * @Date:   2015-06-29 15:38:58
 * @Last Modified by:   darkless
-* @Last Modified time: 2015-08-04 14:50:49
+* @Last Modified time: 2015-08-07 15:21:29
 */
 
 /*Initial*/
@@ -37,7 +37,7 @@ pre{
     font: inherit;
     word-break: break-all;
     word-wrap: break-word;
-    line-height: inherit;
+    line-height: 35px;
 }
 
 header p{
@@ -223,6 +223,7 @@ div.cont_right{
     float: right;
     background-color: #fff;
     width: 60%;
+    padding-bottom: 120px;
 }
 
 h2{
@@ -249,13 +250,13 @@ h2::after{
     color: inherit;
 }
 
-.content::after{
+/*.content::after{
     content: "";
     display: block;
     margin: 0 auto;
     border-bottom: 1px solid #000;
     width: 450px;
-}
+}*/
 
 .cont_right{
     padding-top: 60px;

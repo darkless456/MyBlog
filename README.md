@@ -1,5 +1,10 @@
 # MyBlog -- Snow Halation
 
+####Aug 7 2015 Update
+* Add text for python page
+* Fixed javascript question for picture rolling
+* Fixed some CSS "padding" attribution
+
 ####Aug 3 2015 Update
 * Add content of blog
 * Fixed some error about html5 label
