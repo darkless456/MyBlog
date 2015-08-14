@@ -2,7 +2,7 @@
 * @Author: darkless
 * @Date:   2015-06-29 15:38:58
 * @Last Modified by:   darkless
-* @Last Modified time: 2015-08-07 15:21:29
+* @Last Modified time: 2015-08-10 16:40:34
 */
 
 /*Initial*/
@@ -35,7 +35,6 @@ header#header{
 
 pre{
     font: inherit;
-    word-break: break-all;
     word-wrap: break-word;
     line-height: 35px;
 }
