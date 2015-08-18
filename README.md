@@ -1,5 +1,9 @@
 # MyBlog -- Snow Halation
 
+####Aug 18 2015 Update
+* Add four kinds of font style, delete google open sans font
+* Rewrite the code of main css file, read it easier
+
 ####Aug 7 2015 Update
 * Add text for python page
 * Fixed javascript question for picture rolling
