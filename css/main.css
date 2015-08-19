@@ -2,23 +2,11 @@
 * @Author: darkless
 * @Date:   2015-06-29 15:38:58
 * @Last Modified by:   darkless
-* @Last Modified time: 2015-08-18 18:01:42
+* @Last Modified time: 2015-08-19 21:22:31
 */
 
 /*Initial*/
 
-/*
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/fontawesome-webfont.woff') format('woff'),
-       url('../fonts/fontawesome-webfont.ttf') format('truetype'),
-       url('../fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-*/
 /* fonts style*/
 
 @font-face {
@@ -38,17 +26,22 @@
 
 p, pre, textarea{
     font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
 }
 
 body{
     font-family: 'FontAwesome';
-    font-size: 14px;
+    font-size: 16px;
     color: #62686f;
+    line-height: 2;
     background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
+    width: 100%;
 }
 
 title{
@@ -112,12 +105,6 @@ h2::after{
     border-bottom: 2px solid #000;
 }
 
-pre{
-    font: inherit;
-    word-wrap: break-word;
-    line-height: 35px;
-}
-
 header p{
     text-align: center;
 }
@@ -131,31 +118,32 @@ header#header{
     background-color: #fff;
     text-transform: uppercase;
     text-shadow: 0 0 10px #007799;
+    line-height: normal;
     box-shadow: 0 0 15px #000;
     border-radius: 5px;
 }
 
-p#intro{
+#intro{
     font-family: "LobsterTwo";
     text-transform: capitalize;
 }
 
 /* container style */
 
-div#container{
+#container{
     width: 960px;
     margin: 6px auto;
 }
 
-div.cont_left,
-div.cont_right{
+.cont_left,
+.cont_right{
     border-radius: 10px;
     box-shadow: 0 0 15px #000;
 }
 
 /* navigation style */
 
-ul.nav_ul{
+.nav_ul{
     font-family: "Microsoft YaHei";
     font-weight: 900;
     list-style-type: none;
@@ -169,7 +157,7 @@ ul.nav_ul{
     overflow: hidden;
 }
 
-li.nav_li{
+.nav_li{
     box-sizing: inherit;
     float: left;
     width: 25%;
@@ -180,7 +168,7 @@ li.nav_li{
     background-color: #fff;
 }
 
-ul.nav_ul li a{
+.nav_ul li a{
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
@@ -188,7 +176,7 @@ ul.nav_ul li a{
 
 /* layout left part style */
 
-div.cont_left{
+.cont_left{
     float: left;
     background-color: #fff;
     width: 25%;
@@ -196,7 +184,7 @@ div.cont_left{
     margin-top: 65px;
 }
 
-p.name{
+.name{
     font-size: 24px;
     text-shadow: 0px 0px 5px #fff;
 }
@@ -213,10 +201,9 @@ p.name{
     text-align: center;
 }
 
-div.cont_left header{
+.cont_left header{
     width: 100%;
 }
-
 
 
 .aboutCreater header img{
@@ -230,14 +217,14 @@ div.cont_left header{
     box-shadow: 0 0 15px #000;
 }
 
-div.imgs_div{
+.imgs_div{
     position: relative;
     height: 90px;
     overflow: hidden;
     margin: 60px 0;
 }
 
-ul.imgs_ul{
+.imgs_ul{
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -246,11 +233,11 @@ ul.imgs_ul{
     left: 0;
 }
 
-li.imgs_li{
+.imgs_li{
     float: left;
 }
 
-li.imgs_li img{
+.imgs_li img{
     width: 120px;
     height: 90px;
 }
@@ -258,25 +245,28 @@ li.imgs_li img{
     margin-top: 10px;
 }
 
-textarea.discuession{
-    resize: none;
-    display: block;
+#discuession, #shadow{
     width: 100%;
     height: 100px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+    box-sizing: border-box;    
+    overflow: hidden;
 }
 
-.aboutDiscuession label{
-    display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+#discuession{
+    resize: none;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#shadow{
+    position: absolute;
+    border-width: 0;
+    padding: 0;
+    visibility: hidden;
 }
 
 input[type="text"]{
-    margin-top: 5px;
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -285,7 +275,7 @@ input[type="text"]{
 
 /* layout right part style*/
 
-div.cont_right{
+.cont_right{
     float: right;
     background-color: #fff;
     width: 60%;
@@ -322,20 +312,4 @@ footer{
     padding-top: 30px;
 }
 
-/*------------------------------------------------*/
-/*Child_pages CSS*/
-div.img_scroll_div{
-    position: relative;
-    width: 100%;
-    height: 320px;
-    overflow: hidden;
-    box-sizing: border-box;
-    box-shadow: 0 0 15px #000;
-    border-radius: 5px;
-}
-ul.img_scroll_ul{
-    box-sizing: border-box;
-    background-color: pink;
-    height: 320px;
-    position: relative;
-}
+

@@ -2,7 +2,7 @@
  * @Author: darkless
  * @Date:   2015-07-01 12:19:47
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-07-22 16:51:20
+ * @Last Modified time: 2015-08-19 21:35:05
  */
 'use strict';
 window.onload = function() {
@@ -55,26 +55,11 @@ window.onload = function() {
             aLi_Nav[this.index].id = '';
         }
     }
-}
-//ajax
-function xmlHttp(url, obj, fnSucc1) {
-    var xmlHttp;
-    if (window.XMLHttpRequest) {
-        var xmlHttp = new XMLHttpRequest();
-    } else {
-        var xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    // connect to server
-    xmlHttp.open("GET", url, true);
-    xmlHttp.send();
-    xmlHttp.onreadystatechange = function() {
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-            obj.innerHTML = xmlHttp.responseText;
-            if (fnSucc1) {
-                fnSucc1(xmlHttp.responseText);
-            }
-        }
-    }
+    //autochange textarea
+    var oTxt = document.getElementById("discuession");
+    var oTxt2 = document.getElementById("shadow");
+    autoTextarea(oTxt, oTxt2);
+
 }
 //loadCss
 // function loadCss(file) {

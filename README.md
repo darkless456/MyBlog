@@ -1,5 +1,11 @@
 # MyBlog -- Snow Halation
 
+
+####Aug 19 2015 Update
+* Fixed the font style mistakes
+* Add index feature, auto change the height of textarea when input
+* Optimize javascript files loading squence
+
 ####Aug 18 2015 Update
 * Add four kinds of font style, delete google open sans font
 * Rewrite the code of main css file, read it easier

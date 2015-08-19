@@ -8,7 +8,6 @@ Whichever way of "this" is called, who the function belongs to, the "this" point
 
 <h3>in a common function</h3>
 <textarea class="content_code box_border s-height">
-<code>
     javascript
     
     function person(){
@@ -16,7 +15,6 @@ Whichever way of "this" is called, who the function belongs to, the "this" point
       console.log(this);
     }
     person();
-</code>
 </textarea>
 In the code the person function as a common function called, in fact, the function as a global object is called by window object.
 So this point to window object, not the person function.
@@ -25,7 +23,6 @@ Otherwise, the window object has the attribution of name , the value is xl.
 
 <h3>in a method</h3>
 <textarea class="content_code box_border m-height">
-<code>
     javascript
     
     var name = "XL";
@@ -38,12 +35,10 @@ Otherwise, the window object has the attribution of name , the value is xl.
      person.showName();  //output  "xl"
      var showNameA = person.showName;
      showNameA(); //output "XL"
-</code>
 </textarea>
 
 <h3>in constructor</h3>
 <textarea class="content_code box_border m-height">
-<code>
     javascript
     
     function Person(name){
@@ -55,12 +50,10 @@ Otherwise, the window object has the attribution of name , the value is xl.
     
     var personB = new Person("xl");  //create instance
     console.log(personB.name);   //xl
-</code>
 </textarea>
 
 <h3>Call and apply method</h3>
 <textarea class="content_code box_border s-height">
-<code>
     javascript
     
     function Person(){
@@ -70,6 +63,5 @@ Otherwise, the window object has the attribution of name , the value is xl.
         }
     }
     Person.showName.call();  //output  undefined
-</code>
 </textarea>
 Call and apply of the best way is can change object that this point to.
