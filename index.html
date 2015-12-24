@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,12 +12,14 @@
     <link rel="stylesheet" href="css/onMouseStyle.css" />
     <script src="js/public.js" type="text/javascript" charset="utf-8"></script>
 </head>
+
 <body>
     <div id="container">
         <header id="header" class="header">
             <h1>snow halation</h1>
             <p id="intro">the blog of designer, it isn't so hard, but so interesting</p>
-        </header><!-- /header -->
+        </header>
+        <!-- /header -->
         <nav id="main_nav">
             <ul class="nav_ul">
                 <li class="nav_li"><a href="javascript:;"><i class="fa fa-home fa-fw"></i>&nbsp;home</a></li>
@@ -31,7 +34,8 @@
                     <img src="img/head_img.jpg" alt="darkless">
                     <p class="name">darkless</p>
                     <p class="addr">ShangHai, China</p>
-                </header><!-- /header -->
+                </header>
+                <!-- /header -->
                 <p>Be a producter, no only a customer.</p>
             </section>
             <section class="left_side img_scroll">
@@ -46,12 +50,17 @@
                 </div>
             </section>
             <section class="left_side aboutDiscuession">
-                <form action="" accept-charset="utf-8">
+                <form action="./php/submit_msg.php" method="post" accept-charset="utf-8" name="message" onsubmit="return inputCheck(this);">
                     <label for="discuession">Leave a Message</label>
-                    <textarea id="discuession"></textarea>
+                    <textarea id="discuession" name="discuession" type="text" placeholder="Leave a Message"></textarea>
                     <textarea id="shadow"></textarea>
-                    <label>E-Mail<input type="text" name="email" value=""></label>
-                    <button type="submit" class="btn btn_success">submit</button>
+                    <label>Nickname
+                        <input id="nickname" type="text" name="nickname" placeholder="Please Input Nickname">
+                    </label>
+                    <label>E-Mail
+                        <input id="email" type="email" name="email" placeholder="Please Input Email">
+                    </label>
+                    <button type="submit" name="submit" class="btn btn_success">submit</button>
                 </form>
             </section>
         </div>
@@ -59,26 +68,45 @@
             <section class="cont_li aboutPython">
                 <header>
                     <h2><a href="javascript:;">About Python</a></h2>
-                </header><!-- /header -->
+                </header>
+                <!-- /header -->
                 <article class="content"></article>
             </section>
             <section class="cont_li aboutJavascript">
                 <header>
                     <h2><a href="html/index_js.html">About Javascript</a></h2>
-                </header><!-- /header -->
+                </header>
+                <!-- /header -->
                 <article class="content"></article>
             </section>
             <section class="cont_li aboutBlog">
                 <header>
                     <h2><a href="#">About Blog</a></h2>
-                </header><!-- /header -->
+                </header>
+                <!-- /header -->
                 <article class="content"></article>
             </section>
         </div>
         <footer>
-            <p>&copy Copyright 2015 Design by darkless</p>
+            <p>&copy Copyright 2015 Design by darkless &nbsp; <a href="./php/login.php">Login</a></p>
         </footer>
     </div>
-    </body>
+</body>
 <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+<script>
+function inputCheck(form) {
+    if (form.nickname.value == '') {
+        alert("Please Input Nickname");
+        form.nickname.focus();
+        return false;
+    }
+
+    if (form.discuession.value == '') {
+        alert("Please Leave a Message");
+        form.discuession.focus();
+        return false;
+    }
+}
+</script>
+
 </html>

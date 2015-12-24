@@ -1,9 +1,9 @@
 /* 
  * @Author: darkless
  * @Date:   2015-05-27 09:48:05
- * @Last Modified by:   Kevin
+ * @Last Modified by:   darkless
  * @Email: narcissu456@gmail.com
- * @Last Modified time: 2015-06-11 11:40:57
+ * @Last Modified time: 2015-08-27 15:09:48
  */
 "use strict";
 //运动框架，适用以像素为单位的运动 和 透明度变化

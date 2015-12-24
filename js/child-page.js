@@ -2,7 +2,7 @@
  * @Author: darkless
  * @Date:   2015-07-14 15:20:33
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-08-07 13:02:05
+ * @Last Modified time: 2015-08-28 09:25:16
  */
 'use strict';
 $(document).ready(function() {
@@ -22,10 +22,10 @@ $(document).ready(function() {
 
     //-----------------------------JS------------------------------------------//
     var pics_onoff = document.getElementById("img_scroll");
-    if(pics_onoff != null){
+    if (pics_onoff != null) {
         //content part
         $(".pics_roll .content_txt:first").load("../txt/txt_js/how_to_make_pictures_rolling.txt");
-        $(".pics_roll .dis_btn:first").click(function(){
+        $(".pics_roll .dis_btn:first").click(function() {
             $(".pics_roll .content_code:first").load("../txt/txt_js/how_to_make_pictures_rolling_code.txt");
             $(".pics_roll .content_code:first").slideToggle("slow");
         });

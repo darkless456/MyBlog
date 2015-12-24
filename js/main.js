@@ -2,7 +2,7 @@
  * @Author: darkless
  * @Date:   2015-07-01 12:19:47
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-08-19 21:35:05
+ * @Last Modified time: 2015-08-27 21:58:11
  */
 'use strict';
 window.onload = function() {
@@ -13,8 +13,6 @@ window.onload = function() {
     xmlHttp("txt/About Python.txt", oArt[0]);
     xmlHttp("txt/About JavaScript.txt", oArt[1]);
     xmlHttp("txt/About Blog.txt", oArt[2]);
-    //load outer css for content
-    myLoadCss("textStyle");
     //load scrolling images
     var oBody = document.getElementsByTagName("body")[0];
     var oDiv_Imgs = getByClass(document, "imgs_div");

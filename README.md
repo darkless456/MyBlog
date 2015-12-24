@@ -1,5 +1,11 @@
 # MyBlog -- Snow Halation
 
+###Aug 27 2015 Update
+* Fixed text style of index, includ text-align, text-indent
+* After leaving a message , auto go to main page
+
+###Aug 26 2015 Update
+* Add PHP component for message&email content of index page
 
 ####Aug 19 2015 Update
 * Fixed the font style mistakes
