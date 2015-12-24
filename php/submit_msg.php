@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>提交留言</title>
-    </head>
 <?php
 /**
  * @Author: darkless
  * @Date:   2015-12-15 15:51:24
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-12-24 15:09:34
+ * @Last Modified time: 2015-12-24 16:16:48
  */
  // 判断是否提交
  if(!isset($_POST['submit'])){
@@ -45,14 +39,20 @@
 
  if(mysql_query($inst)){
     ?>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>提交留言</title>
+        <meta http-equiv=refresh content="2;url=../html/index.php">
+    </head>
     <body>
         <p>
-            留言提交成功<br/>
+            留言已经提交成功<br/>
             页面正在跳转。。。
         </p>
     </body>
     <?php
-    header("location: index.php");
     exit;
  } else{
     echo "留言提交失败", mysql_errno(), "请<a href='javascript:history.back(-1)'>返回</a>之前页面";

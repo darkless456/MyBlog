@@ -4,13 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>SNOW HALATION -- Python</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../font-awesome-4.3.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/onMouseStyle.css" />
-    <script src="../js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+    <?php include('../php/unify_header.php'); ?>
 </head>
 <body>
     <div id="container">
@@ -18,14 +12,9 @@
             <h1>snow halation</h1>
             <p id="intro"><span>python</span>, contain everything what you can think of</p>
         </header><!-- /header -->
-        <nav id="main_nav">
-            <ul class="nav_ul">
-                <li class="nav_li"><a href="../index.html"><i class="fa fa-home fa-fw"></i>&nbsp;home</a></li>
-                <li class="nav_li"><a href="../html/index_py.html"><i class="fa fa-pinterest-square fa-fw"></i>&nbsp;python</a></li>
-                <li class="nav_li"><a href="../html/index_js.html"><i class="fa fa-book fa-fw"></i>&nbsp;javascript</a></li>
-                <li class="nav_li"><a href="javascript:;"><i class="fa fa-pencil fa-fw"></i>&nbsp;contact</a></li>
-            </ul>
-        </nav>
+        <?php
+        include('../php/unify_navigation.php');
+        ?>
 <!--         <div id="img_scroll" class="img_scroll_div">
             <ul class="img_scroll_ul"></ul>
         </div> -->
@@ -49,9 +38,9 @@
                 </article>
             </section>
         </div>        
-        <footer>
-            <p>&copy Copyright 2015 Design by darkless</p>
-        </footer>
+        <?php
+        include('../php/unify_footer.php');
+        ?>
     </div>
 
     </body>

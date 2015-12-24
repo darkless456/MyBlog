@@ -1,5 +1,10 @@
 # MyBlog -- Snow Halation
 
+###Dec 24 2015 Update
+* Use php for unify part of header, navigation, footer
+* Web display page replace with php format
+* Add part of message board, add more later 
+
 ###Aug 27 2015 Update
 * Fixed text style of index, includ text-align, text-indent
 * After leaving a message , auto go to main page

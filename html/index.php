@@ -5,34 +5,24 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>SNOW HALATION -- the blog that belong to everyone</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/onMouseStyle.css" />
-    <script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+    <?php include('../php/unify_header.php'); ?>
 </head>
 
 <body>
-    <div id="container">
+    <div id="container" class="container">
         <header id="header" class="header">
             <h1>snow halation</h1>
             <p id="intro">the blog of designer, it isn't so hard, but so interesting</p>
         </header>
         <!-- /header -->
-        <nav id="main_nav">
-            <ul class="nav_ul">
-                <li class="nav_li"><a href="javascript:;"><i class="fa fa-home fa-fw"></i>&nbsp;home</a></li>
-                <li class="nav_li"><a href="./html/index_py.html"><i class="fa fa-pinterest-square fa-fw"></i>&nbsp;python</a></li>
-                <li class="nav_li"><a href="./html/index_js.html"><i class="fa fa-book fa-fw"></i>&nbsp;javascript</a></li>
-                <li class="nav_li"><a href="javascript:;"><i class="fa fa-pencil fa-fw"></i>&nbsp;contact</a></li>
-            </ul>
-        </nav>
+        <?php
+        include('../php/unify_navigation.php');
+        ?>
         <div id="left_part" class="content_div cont_left">
             <section class="left_side aboutCreater">
                 <header>
-                    <img src="img/head_img.jpg" alt="darkless">
-                    <p class="name">darkless</p>
+                    <img src="../img/head_img.jpg" alt="Kevin">
+                    <p class="name">Kevin</p>
                     <p class="addr">ShangHai, China</p>
                 </header>
                 <!-- /header -->
@@ -41,16 +31,16 @@
             <section class="left_side img_scroll">
                 <div class="imgs_div">
                     <ul class="imgs_ul">
-                        <li class="imgs_li"><img src="pics/01.jpg" alt="" /></li>
-                        <li class="imgs_li"><img src="pics/02.jpg" alt="" /></li>
-                        <li class="imgs_li"><img src="pics/03.jpg" alt="" /></li>
-                        <li class="imgs_li"><img src="pics/04.jpg" alt="" /></li>
-                        <li class="imgs_li"><img src="pics/05.jpg" alt="" /></li>
+                        <li class="imgs_li"><img src="../pics/01.jpg" alt="" /></li>
+                        <li class="imgs_li"><img src="../pics/02.jpg" alt="" /></li>
+                        <li class="imgs_li"><img src="../pics/03.jpg" alt="" /></li>
+                        <li class="imgs_li"><img src="../pics/04.jpg" alt="" /></li>
+                        <li class="imgs_li"><img src="../pics/05.jpg" alt="" /></li>
                     </ul>
                 </div>
             </section>
             <section class="left_side aboutDiscuession">
-                <form action="./php/submit_msg.php" method="post" accept-charset="utf-8" name="message" onsubmit="return inputCheck(this);">
+                <form action="../php/submit_msg.php" method="post" accept-charset="utf-8" name="message" onsubmit="return inputCheck(this);">
                     <label for="discuession">Leave a Message</label>
                     <textarea id="discuession" name="discuession" type="text" placeholder="Leave a Message"></textarea>
                     <textarea id="shadow"></textarea>
@@ -67,14 +57,14 @@
         <div id="right_part" class="content_div cont_right">
             <section class="cont_li aboutPython">
                 <header>
-                    <h2><a href="javascript:;">About Python</a></h2>
+                    <h2><a href="./py.php">About Python</a></h2>
                 </header>
                 <!-- /header -->
                 <article class="content"></article>
             </section>
             <section class="cont_li aboutJavascript">
                 <header>
-                    <h2><a href="html/index_js.html">About Javascript</a></h2>
+                    <h2><a href="./js.php">About Javascript</a></h2>
                 </header>
                 <!-- /header -->
                 <article class="content"></article>
@@ -87,12 +77,12 @@
                 <article class="content"></article>
             </section>
         </div>
-        <footer>
-            <p>&copy Copyright 2015 Design by darkless &nbsp; <a href="./php/login.php">Login</a></p>
-        </footer>
+        <?php
+        include('../php/unify_footer.php');
+        ?>
     </div>
 </body>
-<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
 <script>
 function inputCheck(form) {
     if (form.nickname.value == '') {
