@@ -12,9 +12,7 @@
             <h1>snow halation</h1>
             <p id="intro"><span>javascript</span>, create amazing and artistic web effects</p>
         </header><!-- /header -->
-        <?php
-        include('../php/unify_navigation.php');
-        ?>
+        <?php include('../php/unify_navigation.php');?>
         <div id="img_scroll" class="img_scroll_div">
             <ul class="img_scroll_ul"></ul>
         </div>
@@ -34,11 +32,8 @@
                 </article>
             </section>
         </div>
-        <?php
-        include('../php/unify_footer.php');
-        ?>
+        <?php include('../php/unify_footer.php');?>
     </div>
     </body>
-    <script src="../js/base-move-frames.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../js/child-page.js" type="text/javascript" charset="utf-8"></script>
+    <?php include('../php/unify_header_child.php');?>
 </html>

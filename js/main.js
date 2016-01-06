@@ -2,7 +2,7 @@
  * @Author: darkless
  * @Date:   2015-07-01 12:19:47
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-12-24 15:46:15
+ * @Last Modified time: 2016-01-06 13:01:07
  */
 'use strict';
 window.onload = function() {
@@ -10,9 +10,9 @@ window.onload = function() {
         var oDiv = document.getElementById( "right_part" );
         var oArt = getByClass( oDiv, "content" ) || document.getElementsByClassName( "content" );
         //content get from server by ajax
-        xmlHttp( "../txt/About Python.txt", oArt[ 0 ] );
-        xmlHttp( "../txt/About JavaScript.txt", oArt[ 1 ] );
-        xmlHttp( "../txt/About Blog.txt", oArt[ 2 ] );
+        // xmlHttp( "../txt/About Python.txt", oArt[ 0 ] );
+        // xmlHttp( "../txt/About JavaScript.txt", oArt[ 1 ] );
+        // xmlHttp( "../txt/About Blog.txt", oArt[ 2 ] );
         //load scrolling images
         var oBody = document.getElementsByTagName( "body" )[ 0 ];
         var oDiv_Imgs = getByClass( document, "imgs_div" );

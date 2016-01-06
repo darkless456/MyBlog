@@ -1,5 +1,10 @@
 # MyBlog -- Snow Halation
 
+###Jan 6 2016 Update
+* 主页文章由txt格式储存转为MySQL保存
+* 完成基本功能的留言管理和发布管理后台
+* autoheight的发表文本框
+
 ###Dec 24 2015 Update
 * Use php for unify part of header, navigation, footer
 * Web display page replace with php format

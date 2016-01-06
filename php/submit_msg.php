@@ -3,11 +3,11 @@
  * @Author: darkless
  * @Date:   2015-12-15 15:51:24
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-12-24 16:16:48
+ * @Last Modified time: 2015-12-29 17:08:17
  */
  // 判断是否提交
  if(!isset($_POST['submit'])){
-     exit("非法访问");
+     exit("Access violation");
  }
  
  // 表单数据安全性检测
@@ -43,13 +43,13 @@
     <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>提交留言</title>
-        <meta http-equiv=refresh content="2;url=../html/index.php">
+        <title>Post Success</title>
+        <meta http-equiv=refresh content="3;url='javascript:history.back(-1);'">
     </head>
     <body>
         <p>
-            留言已经提交成功<br/>
-            页面正在跳转。。。
+            Leave a message successed!<br/>
+            Go back later.
         </p>
     </body>
     <?php

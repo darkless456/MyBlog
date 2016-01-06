@@ -8,7 +8,7 @@
  * @Author: darkless
  * @Date:   2015-12-15 10:53:21
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-12-24 10:32:28
+ * @Last Modified time: 2015-12-30 17:47:51
  */
  include("connection.php");
 
@@ -35,7 +35,7 @@
  if(!$tb){
     die("Create table msgbook failure, Error Code: ". mysql_errno());
  } else{
-    echo "Create new database <b>db_09</b> successfully!<br/><br/>";
+    echo "Create new database successfully!<br/><br/>";
  }
 
  $posttime = time();
@@ -66,10 +66,26 @@
  if($ub){
     echo "<br>员工表创建成功!";
  } else{
-    echo "<br>创建失败，错误代码：", mysql_errno();
+    echo "<br>员工表创建失败，错误代码：", mysql_errno();
  }
  $username = 'admin';
  $password = md5('123456');
  mysql_query("INSERT INTO user(username, password)VALUES('$username', '$password');");
+ echo "<br>";
+ echo "<br>";
+
+ $essay  = "CREATE TABLE essaybook(";
+ $essay .= "eid mediumint(8) unsigned NOT NULL auto_increment,";
+ $essay .= "title varchar(128) NOT NULL default '',";
+ $essay .= "essay longtext NOT NULL default '',";
+ $essay .= "dilivery_time int(10) unsigned NOT NULL,";
+ $essay .= "PRIMARY KEY(eid)";
+ $essay .= ") ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;";
+ $el = @mysql_query($essay);
+ if($el){
+    echo "文章表建立成功！";
+ } else{
+    echo "<br>essaybook create failure, error code: ", mysql_errno();
+ }
  ?>
  </html>

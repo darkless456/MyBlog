@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>登陆管理后台</title>
+    <title>Login</title> 
     <style>
     * {margin: 0; padding: 0;}
     body{font-size: 14px;}
@@ -14,10 +14,11 @@
     .password{width: 150px;}
     .submit{padding: 5px;}
     </style>
+    <script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <?php
 session_start();
-require("connection.php");
+require("../php/connection.php");
 
 if($_POST){
     $password = md5(trim($_POST['password']));
@@ -28,37 +29,28 @@ if($_POST){
         $_SESSION['username'] = $username;
         $_SESSION['userid'] = $check_array['uid'];
         // 重定向至留言管理界面
-        header("Location: console.php");
+        header("Location: ../php/console.php");
         exit;
     } else{
-        exit('密码错误!');
+        exit('Error!');
     }
 }
 
 
 ?>
 <body>
-    <form name="login" action="" method="post" accept-charset="utf-8" onsubmit="return inputCheck(this);">
+    <form name="login" action="#" method="post" accept-charset="utf-8" onsubmit="return inputCheck(this);">
         <p>
             <input type="hidden" name="username" class="username" value="admin"></input>
         </p>
         <p>
-            <label for="">密码：</label>
-            <input type="password" name="password" class="password" placeholder="输入管理员密码" />
+            <label for="">Password: </label>
+            <input type="password" name="password" class="password" placeholder="administrator password" />
         </p>
         <p>
-            <input type="submit" name="submit" class="submit" value="登陆" />
+            <input type="submit" name="submit" class="submit" value="Login" />
         </p>
     </form>
 </body>
-<script>
-    function inputCheck(form){
-        if(form.password.value == ''){
-            alert('密码不能为空');
-            form.password.focus();
-            return false;
-        }
-    }
-</script>
 
 </html>

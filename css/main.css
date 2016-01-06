@@ -2,46 +2,43 @@
 * @Author: darkless
 * @Date:   2015-06-29 15:38:58
 * @Last Modified by:   darkless
-* @Last Modified time: 2015-12-24 13:43:53
+* @Last Modified time: 2015-12-29 17:28:45
 */
 
 /*Initial*/
 
 /* fonts style*/
 
-@font-face
-{
+@font-face{
     font-family: 'Lobster';
 
     src: local('Lobster'), url('../fonts/Lobster-Regular.ttf') format('truetype');
 }
 
-@font-face
-{
+@font-face{
     font-family: 'LobsterTwo';
 
     src: local('LobsterTwo'), url('../fonts/LobsterTwo-Regular.ttf') format('truetype');
 }
 
-@font-face
-{
+@font-face{
     font-family: 'FontAwesome';
+
     src: local('FontAwesome'), url('../fonts/fontawesome-webfont.ttf') format('truetype');
 }
 
 p,
 pre,
-textarea
-{
+textarea{
+    font-family: 'Microsoft YaHei';
     font-size: 18px;
     font-weight: 500;
 
     word-wrap: break-word;
 }
 
-body
-{
-    font-family: 'FontAwesome';
+body{
+    font-family: 'Microsoft YaHei';
     font-size: 16px;
     line-height: 2;
 
@@ -55,14 +52,12 @@ body
     background-size: cover;
 }
 
-title
-{
+title{
     text-transform: capitalize;
 }
 
 /* initial button style */
-.btn
-{
+.btn{
     font-size: 14px;
     font-weight: 400;
     line-height: 1.42857143;
@@ -84,15 +79,13 @@ title
 }
 
 
-.btn_success
-{
+.btn_success{
     color: #fff;
     border-color: #4cae4c;
     background-color: #5cb85c;
 }
 
-.btn_primary
-{
+.btn_primary{
     color: #fff;
     border-color: #245580;
     border-color: #2e6da4;
@@ -103,15 +96,13 @@ title
 
 /* initial Elements style*/
 
-h1
-{
+h1{
     font-family: 'Lobster';
     font-size: 65px;
 }
 
-h2
-{
-    font-family: 'Microsoft YaHei';
+h2{
+    font-family: 'FontAwesome';
 
     margin: 0 60px;
     margin-top: 30px;
@@ -120,8 +111,7 @@ h2
     text-transform: uppercase;
 }
 
-h2::after
-{
+h2::after{
     display: block;
 
     width: 100px;
@@ -132,15 +122,13 @@ h2::after
     border-bottom: 2px solid #000;
 }
 
-header p
-{
+header p{
     text-align: center;
 }
 
 /* header style */
 
-header#header
-{
+header#header{
     line-height: normal;
 
     height: 120px;
@@ -155,8 +143,7 @@ header#header
     text-shadow: 0 0 10px #079;
 }
 
-#intro
-{
+#intro{
     font-family: 'LobsterTwo';
 
     text-transform: capitalize;
@@ -164,23 +151,20 @@ header#header
 
 /* container style */
 
-#container
-{
+#container{
     width: 960px;
     margin: 6px auto;
 }
 
 .cont_left,
-.cont_right
-{
+.cont_right,{
     border-radius: 10px;
     box-shadow: 0 0 15px #000;
 }
 
 /* navigation style */
 
-.nav_ul
-{
+.nav_ul{
     font-family: 'Microsoft YaHei';
     font-weight: 900;
 
@@ -198,8 +182,7 @@ header#header
     box-shadow: 0 0 15px #000;
 }
 
-.nav_li
-{
+.nav_li{
     float: left;
 
     box-sizing: inherit;
@@ -213,8 +196,7 @@ header#header
     background-color: #fff;
 }
 
-.nav_ul li a
-{
+.nav_ul li a{
     text-decoration: none;
     text-transform: uppercase;
 
@@ -223,8 +205,7 @@ header#header
 
 /* layout left part style */
 
-.cont_left
-{
+.cont_left{
     float: left;
 
     width: 25%;
@@ -234,23 +215,20 @@ header#header
     background-color: #fff;
 }
 
-.name
-{
+.name{
     font-size: 24px;
 
     text-shadow: 0 0 5px #fff;
 }
 
-.aboutCreater p
-{
+.aboutCreater p{
     font-family: 'LobsterTwo';
     font-weight: 400;
 
     text-transform: capitalize;
 }
 
-.aboutCreater
-{
+.aboutCreater{
     font-size: 10px;
 
     margin-top: 60px;
@@ -258,14 +236,12 @@ header#header
     text-align: center;
 }
 
-.cont_left header
-{
+.cont_left header{
     width: 100%;
 }
 
 
-.aboutCreater header img
-{
+.aboutCreater header img{
     display: block;
 
     width: 150px;
@@ -278,8 +254,7 @@ header#header
     box-shadow: 0 0 15px #000;
 }
 
-.imgs_div
-{
+.imgs_div{
     position: relative;
 
     overflow: hidden;
@@ -288,8 +263,7 @@ header#header
     margin: 60px 0;
 }
 
-.imgs_ul
-{
+.imgs_ul{
     position: absolute;
     top: 0;
     left: 0;
@@ -300,24 +274,20 @@ header#header
     list-style-type: none;
 }
 
-.imgs_li
-{
+.imgs_li{
     float: left;
 }
 
-.imgs_li img
-{
+.imgs_li img{
     width: 120px;
     height: 90px;
 }
-.aboutDiscuession .btn
-{
+.aboutDiscuession .btn{
     margin-top: 10px;
 }
 
 #discuession,
-#shadow
-{
+#shadow{
     overflow: hidden;
 
     box-sizing: border-box;
@@ -325,8 +295,7 @@ header#header
     height: 100px;
 }
 
-#shadow
-{
+#shadow{
     position: absolute;
 
     visibility: hidden;
@@ -338,8 +307,7 @@ header#header
 
 #nickname,
 #email,
-#discuession
-{
+#discuession{
     font-size: 12px;
 
     box-sizing: border-box;
@@ -352,22 +320,19 @@ header#header
     border-radius: 5px;
 }
 
-#email
-{
+#email{
     height: 25px;
 }
 
 /* layout right part style*/
 
-.content
-{
+.content{
     padding: 30px 60px;
 
     word-wrap: break-word;
 }
 
-.cont_right
-{
+.cont_right{
     float: right;
 
     width: 60%;
@@ -376,26 +341,22 @@ header#header
     background-color: #fff;
 }
 
-#right_part a
-{
+#right_part a{
     text-decoration: none;
 
     color: inherit;
 }
 
-#right_part a:visited
-{
+#right_part a:visited{
     color: inherit;
 }
 
-.cont_right
-{
+.cont_right{
     padding-top: 60px;
 }
 
 /*Part_footer*/
-footer
-{
+footer{
     font-size: 12px;
     font-weight: 400;
 
@@ -407,6 +368,7 @@ footer
 }
 
 footer a{
-    color: #000;
     text-decoration: none;
+
+    color: #000;
 }

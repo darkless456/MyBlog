@@ -15,9 +15,7 @@
             <p id="intro">the blog of designer, it isn't so hard, but so interesting</p>
         </header>
         <!-- /header -->
-        <?php
-        include('../php/unify_navigation.php');
-        ?>
+        <?php include('../php/unify_navigation.php');?>
         <div id="left_part" class="content_div cont_left">
             <section class="left_side aboutCreater">
                 <header>
@@ -55,48 +53,12 @@
             </section>
         </div>
         <div id="right_part" class="content_div cont_right">
-            <section class="cont_li aboutPython">
-                <header>
-                    <h2><a href="./py.php">About Python</a></h2>
-                </header>
-                <!-- /header -->
-                <article class="content"></article>
-            </section>
-            <section class="cont_li aboutJavascript">
-                <header>
-                    <h2><a href="./js.php">About Javascript</a></h2>
-                </header>
-                <!-- /header -->
-                <article class="content"></article>
-            </section>
-            <section class="cont_li aboutBlog">
-                <header>
-                    <h2><a href="#">About Blog</a></h2>
-                </header>
-                <!-- /header -->
-                <article class="content"></article>
-            </section>
+        <?php 
+        include('../php/connection.php');
+        include('../php/index_display.php');?>
         </div>
-        <?php
-        include('../php/unify_footer.php');
-        ?>
+        <?php include('../php/unify_footer.php');?>
     </div>
 </body>
 <script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
-<script>
-function inputCheck(form) {
-    if (form.nickname.value == '') {
-        alert("Please Input Nickname");
-        form.nickname.focus();
-        return false;
-    }
-
-    if (form.discuession.value == '') {
-        alert("Please Leave a Message");
-        form.discuession.focus();
-        return false;
-    }
-}
-</script>
-
 </html>
