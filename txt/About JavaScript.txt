@@ -1,5 +1,0 @@
-﻿<p>My JavaScript learning began in two months ago, erenow just know this program language often is used for website design, especially for dynamic effects in the web. </p>
-
-<p>JavaScript is amazing language, one of most popular in front web design. It already contain many of unique features, for example Closure, Prototype Channing, this pointer. Cooperate with HTML5, CSS3 these newest technology, making a magnificent web for people. Also JavaScript can use in other areas, like node.js, games developing, password checking and so on.</p>
-
-<p>I wish I can communicate with everyone who like JavaScript, even beginner. Making progresses together is very glad experience. </p>
