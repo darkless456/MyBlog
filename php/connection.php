@@ -8,13 +8,16 @@
  * @Author: darkless
  * @Date:   2015-12-15 10:48:40
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-01-07 22:21:37
+ * @Last Modified time: 2016-01-07 23:10:34
  */
- // $link = @mysql_connect("localhost", "root", "");
  $hostname = SAE_MYSQL_HOST_M. ':'. SAE_MYSQL_PORT;
  $dbuser = SAE_MYSQL_USER;
  $dbpass = SAE_MYSQL_PASS;
- $dbname = SAE_MYSQL_DB;
+ $dbname = SAE_MYSQL_DB; 
+ // $hostname = 'localhost'. ':'. '3306';
+ // $dbuser = 'root';
+ // $dbpass = '';
+ // $dbname = 'myblog';
  $link = @mysql_connect($hostname, $dbuser, $dbpass);
  if(!$link){
      die("Connect to database failure!". mysql_errno());    

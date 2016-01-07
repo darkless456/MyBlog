@@ -71,7 +71,7 @@
         include('./php/index_display.php');?>
         </div>
         <footer>
-            <p><i>&copy Copyright 2015 Design by darkless &nbsp; <a href="./php/login.php">Login</a></i></p>
+            <p><i>&copy Copyright 2015 Design by darkless &nbsp; <a href="./html/login.php">Login</a></i></p>
         </footer>
     </div>
 </body>
