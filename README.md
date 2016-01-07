@@ -1,5 +1,10 @@
 # MyBlog -- Snow Halation
 
+###Jan 7 2016 Update
+* Add ckeditor text editor write essay
+* Remove autoheight dilivery essay textarea frame
+* Use html_entity_decode() output of content
+
 ###Jan 6 2016 Update
 * 主页文章由txt格式储存转为MySQL保存
 * 完成基本功能的留言管理和发布管理后台

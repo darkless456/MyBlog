@@ -3,7 +3,7 @@
  * @Author: darkless
  * @Date:   2015-12-15 15:51:24
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-12-29 17:08:17
+ * @Last Modified time: 2016-01-07 16:51:34
  */
  // 判断是否提交
  if(!isset($_POST['submit'])){
@@ -44,7 +44,7 @@
     <head>
         <meta charset="utf-8">
         <title>Post Success</title>
-        <meta http-equiv=refresh content="3;url='javascript:history.back(-1);'">
+        <meta http-equiv=refresh content="3;url='../html/index.php'">
     </head>
     <body>
         <p>

@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dilivery Manage</title>
     <script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//cdn.ckeditor.com/4.5.6/full/ckeditor.js" type="text/javascript"></script>
     <style>
         fieldset{width: 80%; margin: 30px 0; padding: 30px;}
-        label{float: left; width: 80px;}
+        label{float: left; width: 80px; font-size: 25px; font-weight: bold;}
         [type="submit"]{width: 120px;}
-        #title{width: 600px;}
-        #shadow, #essay{box-sizing: border-box; width: 80%; overflow: hidden; height: 125px; padding: 15px;}
-        #shadow{ position: absolute; border-width: 0px; padding: 0px; visibility: hidden; }
+        #title{width: 80%; height: 18px; padding: 5px;}
+/*        #shadow, #essay{box-sizing: border-box; width: 80%; overflow: hidden; height: 325px; padding: 15px;}
+        #shadow{ position: absolute; border-width: 0px; padding: 0px; visibility: hidden; }*/
     </style>
 </head>
 <body>
@@ -72,21 +73,23 @@
         <input id="title" type="text" name="title"  />        
     </p>
     <P>
-        <label for="essay">正文：</label>
-        <textarea id="essay" name="essay"></textarea>
-        <textarea id="shadow"></textarea>
+        <textarea id="essay" name="essay" class="ckeditor"></textarea>
+        <script type="text/javascript">CKEDITOR.replace('essay', {height: '550px', width: '100%'});</script>
+        <!-- <textarea id="shadow" class="ckeditor"></textarea> -->
     </P>
     <p>
         <input type="submit" name="submit" value="发表">
     </p>
     </form>
-</fieldset></div>
+</fieldset>
+</div>
 </body>
-<script>
+<!-- <script>
     //autochange textarea
-    var oTxt = document.getElementById( "essay" );
-    var oTxt2 = document.getElementById( "shadow" );
-    autoTextarea( oTxt, oTxt2 );
-</script>
+    // var oTxt = document.getElementById( "essay" );
+    // var oTxt2 = document.getElementById( "shadow" );
+    // autoTextarea( oTxt, oTxt2 );
+    
+</script> -->
 </html>
 

@@ -3,14 +3,12 @@
  * @Author: darkless
  * @Date:   2015-12-30 14:29:08
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-12-30 17:46:51
+ * @Last Modified time: 2016-01-07 16:49:04
 */
 
 if(!isset($_POST['submit'])){
  exit("Access violation");
 }
-
-
 
 if(get_magic_quotes_gpc()){
     $title = htmlspecialchars(trim($_POST['title']));

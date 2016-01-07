@@ -2,7 +2,7 @@
  * @Author: darkless
  * @Date:   2015-07-22 14:42:11
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-12-30 14:16:42
+ * @Last Modified time: 2016-01-07 16:10:56
  */
 'use strict';
 //ajax
@@ -79,13 +79,13 @@ function inputCheck( form ) {
             return false;
         }
     }
-    if ( form.essay ) {
-        if ( form.essay.value == '' ) {
-            alert( "Please Input Content" );
-            form.essay.focus();
-            return false;
-        }
-    }
+    // if ( form.essay ) {
+    //     if ( form.essay.value == '' ) {
+    //         alert( "Please Input Content" );
+    //         form.essay.focus();
+    //         return false;
+    //     }
+    // }
     if ( form.password ) {
         if ( form.password.value == '' ) {
             alert( 'Please Input Password' );
@@ -93,13 +93,13 @@ function inputCheck( form ) {
             return false;
         }
     }
-    if ( form.discuession ) {
-        if ( form.discuession.value == '' ) {
-            alert( "Please Leave a Message" );
-            form.discuession.focus();
-            return false;
-        }
-    }
+    // if ( form.discuession ) {
+    //     if ( form.discuession.value == '' ) {
+    //         alert( "Please Leave a Message" );
+    //         form.discuession.focus();
+    //         return false;
+    //     }
+    // }
 
 }
 
