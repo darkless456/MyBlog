@@ -50,6 +50,13 @@
                     </label>
                     <button type="submit" name="submit" class="btn btn_success">submit</button>
                 </form>
+                <?php
+                echo SAE_MYSQL_USER;
+                echo SAE_MYSQL_PASS;
+                echo SAE_MYSQL_HOST_M;
+                echo SAE_MYSQL_PORT;
+                echo SAE_MYSQL_DB; 
+                ?>
             </section>
         </div>
         <div id="right_part" class="content_div cont_right">
