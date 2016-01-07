@@ -46,7 +46,7 @@ if($_POST){
     </body>
     </html>
     <?php
-        // exit;
+        exit();
     } else{
         exit('Error!');
     }
