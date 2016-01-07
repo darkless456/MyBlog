@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php @session_start();?>
 <html>
 
 <head>
@@ -17,7 +18,6 @@
     <script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <?php
-@session_start();
 require("../php/connection.php");
 
 if($_POST){
