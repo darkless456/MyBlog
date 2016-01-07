@@ -5,7 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>SNOW HALATION -- the blog that belong to everyone</title>
-    <?php include('./php/unify_header.php'); ?>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/onMouseStyle.css" />
+    <script src="./js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/public.js" type="text/javascript" charset="utf-8"></script>'
 </head>
 
 <body>
@@ -57,21 +63,16 @@
                     </label>
                     <button type="submit" name="submit" class="btn btn_success">submit</button>
                 </form>
-                <?php
-                echo SAE_MYSQL_USER,'<br>';
-                echo SAE_MYSQL_PASS,'<br>';
-                echo SAE_MYSQL_HOST_M,'<br>';
-                echo SAE_MYSQL_PORT,'<br>';
-                echo SAE_MYSQL_DB,'<br>'; 
-                ?>
             </section>
         </div>
         <div id="right_part" class="content_div cont_right">
-        <?php 
+        <?php
         include('./php/connection.php');
         include('./php/index_display.php');?>
         </div>
-        <?php include('./php/unify_footer.php');?>
+        <footer>
+            <p><i>&copy Copyright 2015 Design by darkless &nbsp; <a href="./php/login.php">Login</a></i></p>
+        </footer>
     </div>
 </body>
 <script src="./js/main.js" type="text/javascript" charset="utf-8"></script>
