@@ -15,7 +15,14 @@
             <p id="intro">the blog of designer, it isn't so hard, but so interesting</p>
         </header>
         <!-- /header -->
-        <?php include('./php/unify_navigation.php');?>
+        <nav id="main_nav">
+            <ul class="nav_ul">
+                <li class="nav_li"><a href="./index.php"><i class="fa fa-home fa-fw"></i>&nbsp;home</a></li>
+                <li class="nav_li"><a href="./html/py.php"><i class="fa fa-pinterest-square fa-fw"></i>&nbsp;python</a></li>
+                <li class="nav_li"><a href="./html/js.php"><i class="fa fa-book fa-fw"></i>&nbsp;javascript</a></li>
+                <li class="nav_li"><a href="./html/contact.php"><i class="fa fa-pencil fa-fw"></i>&nbsp;contact</a></li>
+            </ul>
+        </nav>
         <div id="left_part" class="content_div cont_left">
             <section class="left_side aboutCreater">
                 <header>
