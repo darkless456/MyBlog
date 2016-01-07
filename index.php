@@ -51,11 +51,11 @@
                     <button type="submit" name="submit" class="btn btn_success">submit</button>
                 </form>
                 <?php
-                echo SAE_MYSQL_USER;
-                echo SAE_MYSQL_PASS;
-                echo SAE_MYSQL_HOST_M;
-                echo SAE_MYSQL_PORT;
-                echo SAE_MYSQL_DB; 
+                echo SAE_MYSQL_USER,'<br>';
+                echo SAE_MYSQL_PASS,'<br>';
+                echo SAE_MYSQL_HOST_M,'<br>';
+                echo SAE_MYSQL_PORT,'<br>';
+                echo SAE_MYSQL_DB,'<br>'; 
                 ?>
             </section>
         </div>
