@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>SNOW HALATION -- the blog that belong to everyone</title>
-    <?php include('../php/unify_header.php'); ?>
+    <?php include('./php/unify_header.php'); ?>
 </head>
 
 <body>
@@ -15,11 +15,11 @@
             <p id="intro">the blog of designer, it isn't so hard, but so interesting</p>
         </header>
         <!-- /header -->
-        <?php include('../php/unify_navigation.php');?>
+        <?php include('./php/unify_navigation.php');?>
         <div id="left_part" class="content_div cont_left">
             <section class="left_side aboutCreater">
                 <header>
-                    <img src="../img/head_img.jpg" alt="Kevin">
+                    <img src="./img/head_img.jpg" alt="Kevin">
                     <p class="name">Kevin</p>
                     <p class="addr">ShangHai, China</p>
                 </header>
@@ -29,16 +29,16 @@
             <section class="left_side img_scroll">
                 <div class="imgs_div">
                     <ul class="imgs_ul">
-                        <li class="imgs_li"><img src="../pics/01.jpg" alt="" /></li>
-                        <li class="imgs_li"><img src="../pics/02.jpg" alt="" /></li>
-                        <li class="imgs_li"><img src="../pics/03.jpg" alt="" /></li>
-                        <li class="imgs_li"><img src="../pics/04.jpg" alt="" /></li>
-                        <li class="imgs_li"><img src="../pics/05.jpg" alt="" /></li>
+                        <li class="imgs_li"><img src="./pics/01.jpg" alt="" /></li>
+                        <li class="imgs_li"><img src="./pics/02.jpg" alt="" /></li>
+                        <li class="imgs_li"><img src="./pics/03.jpg" alt="" /></li>
+                        <li class="imgs_li"><img src="./pics/04.jpg" alt="" /></li>
+                        <li class="imgs_li"><img src="./pics/05.jpg" alt="" /></li>
                     </ul>
                 </div>
             </section>
             <section class="left_side aboutDiscuession">
-                <form action="../php/submit_msg.php" method="post" accept-charset="utf-8" name="message" onsubmit="return inputCheck(this);">
+                <form action="./php/submit_msg.php" method="post" accept-charset="utf-8" name="message" onsubmit="return inputCheck(this);">
                     <label for="discuession">Leave a Message</label>
                     <textarea id="discuession" name="discuession" type="text" placeholder="Leave a Message"></textarea>
                     <textarea id="shadow"></textarea>
@@ -54,11 +54,11 @@
         </div>
         <div id="right_part" class="content_div cont_right">
         <?php 
-        include('../php/connection.php');
-        include('../php/index_display.php');?>
+        include('./php/connection.php');
+        include('./php/index_display.php');?>
         </div>
-        <?php include('../php/unify_footer.php');?>
+        <?php include('./php/unify_footer.php');?>
     </div>
 </body>
-<script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/main.js" type="text/javascript" charset="utf-8"></script>
 </html>
