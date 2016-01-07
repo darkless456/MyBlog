@@ -8,9 +8,14 @@
  * @Author: darkless
  * @Date:   2015-12-15 10:48:40
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-12-24 10:30:44
+ * @Last Modified time: 2016-01-07 22:21:37
  */
- $link = @mysql_connect("localhost", "root", "");
+ // $link = @mysql_connect("localhost", "root", "");
+ $hostname = SAE_MYSQL_HOST_M. ':'. SAE_MYSQL_PORT;
+ $dbuser = SAE_MYSQL_USER;
+ $dbpass = SAE_MYSQL_PASS;
+ $dbname = SAE_MYSQL_DB;
+ $link = @mysql_connect($hostname, $dbuser, $dbpass);
  if(!$link){
      die("Connect to database failure!". mysql_errno());    
  }
@@ -19,6 +24,6 @@
  mysql_query("set names 'utf8';");
  date_default_timezone_set('PRC'); 
 
- mysql_select_db("myblog", $link);
+ mysql_select_db($dbname, $link);
  ?>
  </html>

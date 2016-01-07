@@ -8,15 +8,15 @@
  * @Author: darkless
  * @Date:   2015-12-15 10:53:21
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-12-30 17:47:51
+ * @Last Modified time: 2016-01-07 22:33:33
  */
- include("connection.php");
+ include("./connection.php");
 
- if(mysql_select_db('myblog', $link)){
-    mysql_query("drop database myblog;", $link);
+ if(mysql_select_db($dbname, $link)){
+    mysql_query("drop database $dbname;", $link);
  }
 
- mysql_query("create database myblog", $link);
+ mysql_query("create database ", $link);
  mysql_select_db("myblog", $link);
 
  $sql  = "CREATE TABLE msgbook(";
