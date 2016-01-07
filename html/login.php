@@ -29,8 +29,24 @@ if($_POST){
         $_SESSION['username'] = $username;
         $_SESSION['userid'] = $check_array['uid'];
         // 重定向至留言管理界面
-        header("Location: ../php/console.php");
-        exit;
+        // header("Location: ../php/console.php");
+        ?>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Post Success</title>
+        <meta http-equiv=refresh content="1;url='./php/dilivery.php'">
+    </head>
+    <body>
+        <p>
+            Login successed!<br/>
+            Now going to console.
+        </p>
+    </body>
+    </html>
+    <?php
+        // exit;
     } else{
         exit('Error!');
     }
