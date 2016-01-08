@@ -3,7 +3,7 @@
  * @Author: darkless
  * @Date:   2015-12-30 14:29:08
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-01-07 16:49:04
+ * @Last Modified time: 2016-01-08 09:12:30
 */
 
 if(!isset($_POST['submit'])){
@@ -45,6 +45,7 @@ if(mysql_query($inst_essay)){
     </body>
     </html>
 <?php
+exit;
 } else{
     echo "dilivery failure, error code: ", mysql_errno(), "<a href='javascript:history.back(-1)>go back</a>";
 }

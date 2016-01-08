@@ -4,6 +4,7 @@
 * Add ckeditor text editor write essay
 * Remove autoheight dilivery essay textarea frame
 * Use html_entity_decode() output of content
+* Fixed some errors that running on SAE playform, include position of index, redirect page, and some small mistakes
 
 ###Jan 6 2016 Update
 * 主页文章由txt格式储存转为MySQL保存
