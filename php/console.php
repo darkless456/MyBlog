@@ -1,3 +1,4 @@
+<?php  @session_start();?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,9 +8,8 @@
 
  <body>
  <h1>欢迎进入留言管理<?php
- @session_start();
  if(!$_SESSION['username']){
-    // header('location: ../html/login.php');
+    header('location: ../html/login.php');
     exit('非法访问');
  }
  ?>
