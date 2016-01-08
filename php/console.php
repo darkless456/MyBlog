@@ -1,4 +1,10 @@
-<?php  @session_start();?>
+<?php  
+ @session_start();
+ if(!$_SESSION['username']){
+    header('location: ../html/login.php');
+    exit;
+ }
+ ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,13 +13,7 @@
     </head>
 
  <body>
- <h1>欢迎进入留言管理<?php
- if(!$_SESSION['username']){
-    header('location: ../html/login.php');
-    exit('非法访问');
- }
- ?>
- </h1>
+ <h1>欢迎进入留言管理</h1>
  <p>
     <a href="./dilivery.php" title="点击进入发布管理页面">点击进入发布管理页面</a>
  </p>
