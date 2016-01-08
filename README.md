@@ -1,5 +1,8 @@
 # MyBlog -- Snow Halation
 
+###Jan 8 2016 Update
+* Fixed multi mistakes for page redirect
+
 ###Jan 7 2016 Update
 * Add ckeditor text editor write essay
 * Remove autoheight dilivery essay textarea frame
