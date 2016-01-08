@@ -47,7 +47,7 @@
     }
 
     while($get_title = mysql_fetch_array($select_title)){
-        echo 'No.<b>',$get_title['eid'], '</b>.  Title: <b>', $get_title['title'], '</b>';
+        echo 'No.<b>',$get_title['eid'], '</b> /  Title: <b>', $get_title['title'], '</b>';
         echo '<br>Post at: ', date('Y-m-d H:m', $get_title['dilivery_time']);
         ?>
         <form action="./delete_essay.php" method="post" accept-charset="utf-8">
