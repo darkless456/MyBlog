@@ -13,9 +13,9 @@
     </head>
 
  <body>
- <h1>欢迎进入留言管理</h1>
+ <h1>留言管理</h1>
  <p>
-    <a href="./dilivery.php" title="点击进入发布管理页面">点击进入发布管理页面</a>
+    <a href="./dilivery.php" title="">进入文章管理</a>
  </p>
  <?php
  require("./connection.php");

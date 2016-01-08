@@ -1,3 +1,10 @@
+<?php  
+ @session_start();
+ if(!$_SESSION['username']){
+    header('location: ../html/login.php');
+    exit;
+ }
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,9 +25,9 @@
 <body>
 
 <div class="container" id="container">
-<h1>文章发布管理页面</h1>
+<h1>文章管理</h1>
 <p>
-    <a href="./console.php" title="点击进入留言管理页面">点击进入留言管理页面</a>
+    <a href="./console.php" title="">进入留言管理</a>
 </p>
 <!-- 已发表文章展示，最近发表的在前 -->
 <div class="show_title">
