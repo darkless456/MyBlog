@@ -2,10 +2,12 @@
 * @Author: darkless
 * @Date:   2015-06-29 15:38:58
 * @Last Modified by:   darkless
-* @Last Modified time: 2015-12-29 17:28:45
+* @Last Modified time: 2016-01-08 10:29:59
 */
 
+
 /*Initial*/
+
 
 /* fonts style*/
 
@@ -56,7 +58,9 @@ title{
     text-transform: capitalize;
 }
 
+
 /* initial button style */
+
 .btn{
     font-size: 14px;
     font-weight: 400;
@@ -78,7 +82,6 @@ title{
     background-image: none;
 }
 
-
 .btn_success{
     color: #fff;
     border-color: #4cae4c;
@@ -93,6 +96,7 @@ title{
     background-image: linear-gradient(to bottom, #337ab7 0px, #265a88 100%);
     background-repeat: repeat-x;
 }
+
 
 /* initial Elements style*/
 
@@ -126,6 +130,7 @@ header p{
     text-align: center;
 }
 
+
 /* header style */
 
 header#header{
@@ -149,6 +154,7 @@ header#header{
     text-transform: capitalize;
 }
 
+
 /* container style */
 
 #container{
@@ -161,6 +167,7 @@ header#header{
     border-radius: 10px;
     box-shadow: 0 0 15px #000;
 }
+
 
 /* navigation style */
 
@@ -203,6 +210,7 @@ header#header{
     color: #000;
 }
 
+
 /* layout left part style */
 
 .cont_left{
@@ -239,7 +247,6 @@ header#header{
 .cont_left header{
     width: 100%;
 }
-
 
 .aboutCreater header img{
     display: block;
@@ -282,6 +289,7 @@ header#header{
     width: 120px;
     height: 90px;
 }
+
 .aboutDiscuession .btn{
     margin-top: 10px;
 }
@@ -324,6 +332,7 @@ header#header{
     height: 25px;
 }
 
+
 /* layout right part style*/
 
 .content{
@@ -341,21 +350,13 @@ header#header{
     background-color: #fff;
 }
 
-#right_part a{
-    text-decoration: none;
-
-    color: inherit;
-}
-
-#right_part a:visited{
-    color: inherit;
-}
-
 .cont_right{
     padding-top: 60px;
 }
 
+
 /*Part_footer*/
+
 footer{
     font-size: 12px;
     font-weight: 400;
