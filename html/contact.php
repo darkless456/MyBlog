@@ -1,3 +1,4 @@
+<?php $is_mark='contact';?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -92,5 +93,4 @@
 </div>
 
 </body>
-    <?php include('../php/unify_header_child.php');?>
 </html>

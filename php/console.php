@@ -1,4 +1,4 @@
-<?php  
+<?php 
  @session_start();
  if(!$_SESSION['username']){
     header('location: ../html/login.php');
@@ -16,6 +16,8 @@
  <h1>留言管理</h1>
  <p>
     <a href="./dilivery.php" title="">进入文章管理</a>
+    <br>
+    <a href="../index.php" title="">返回首页</a>
  </p>
  <?php
  require("./connection.php");

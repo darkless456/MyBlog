@@ -1,3 +1,4 @@
+<?php $is_mark='js';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,23 +18,11 @@
             <ul class="img_scroll_ul"></ul>
         </div>
         <div id="content" class="box_border">
-            <section class="content_sec">
-                <h2>how to make pictures rolling</h2>
-                <article class="content_arti pics_roll">
-                    <pre class="content_txt"></pre>
-                    <button type="button" class="dis_btn btn btn_primary">Code</button>
-                    <textarea class="content_code box_border h-height display_none"></textarea>
-                </article>
-            </section>
-            <section class="content_sec">
-                <h2>the key word this of usage</h2>
-                <article class="content_arti this_usage">
-                    <pre class="content_txt"></pre>
-                </article>
-            </section>
+        <?php
+        include('../php/connection.php');
+        include('../php/essay_display.php');?>
         </div>
         <?php include('../php/unify_footer.php');?>
     </div>
     </body>
-    <?php include('../php/unify_header_child.php');?>
 </html>

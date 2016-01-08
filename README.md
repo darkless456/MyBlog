@@ -2,6 +2,7 @@
 
 ###Jan 8 2016 Update
 * Fixed multi mistakes for page redirect
+* Merge similar function of php scripts, use page mark variable 
 
 ###Jan 7 2016 Update
 * Add ckeditor text editor write essay

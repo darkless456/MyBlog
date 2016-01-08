@@ -1,3 +1,4 @@
+<?php $is_mark='py';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,28 +18,12 @@
             <ul class="img_scroll_ul"></ul>
         </div> -->
         <div id="content" class="box_border">
-            <section class="content_sec beginner">
-                <h2>beginner for python</h2>
-                <article class="content_arti">
-                    <pre class="content_txt"></pre>
-                </article>
-            </section>
-            <section class="content_sec history">
-                <h2>history of python</h2>
-                <article class="content_arti">
-                    <pre class="content_txt"></pre>
-                </article>
-            </section>
-            <section class="content_sec features">
-                <h2>features of python</h2>
-                <article class="content_arti">
-                    <pre class="content_txt"></pre>
-                </article>
-            </section>
-        </div>        
+        <?php
+        include('../php/connection.php');
+        include('../php/essay_display.php');?>
+        </div>
         <?php include('../php/unify_footer.php');?>
     </div>
 
     </body>
-    <?php include('../php/unify_header_child.php');?>
 </html>

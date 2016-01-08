@@ -2,7 +2,7 @@
  * @Author: darkless
  * @Date:   2015-07-22 14:42:11
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-01-07 16:10:56
+ * @Last Modified time: 2016-01-08 14:21:08
  */
 'use strict';
 //ajax
@@ -100,6 +100,11 @@ function inputCheck( form ) {
     //         return false;
     //     }
     // }
+    if ( form.classify.value == '') {
+        alert( '请选择分类' );
+        form.classify.focus();
+        return false;
+    }
 
 }
 

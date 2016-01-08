@@ -1,4 +1,5 @@
-<?php @session_start();?>
+<?php 
+@session_start();?>
 <!DOCTYPE html>
 <html>
 
@@ -67,6 +68,7 @@ if($_POST){
             <input type="submit" name="submit" class="submit" value="Login" />
         </p>
     </form>
+    <a href="../index.php" title="Go to index">Go to index</a>
 </body>
 
 </html>

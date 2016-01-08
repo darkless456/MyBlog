@@ -1,3 +1,4 @@
+<?php $is_mark='index';?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>SNOW HALATION -- the blog that belong to everyone</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./font-awesome-4.3.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/onMouseStyle.css" />
-    <script src="./js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
-    <script src="./js/public.js" type="text/javascript" charset="utf-8"></script>'
+<?php include('./php/unify_header.php');?>
 </head>
 
 <body>
@@ -21,14 +16,7 @@
             <p id="intro">the blog of designer, it isn't so hard, but so interesting</p>
         </header>
         <!-- /header -->
-        <nav id="main_nav">
-            <ul class="nav_ul">
-                <li class="nav_li"><a href="./index.php"><i class="fa fa-home fa-fw"></i>&nbsp;home</a></li>
-                <li class="nav_li"><a href="./html/py.php"><i class="fa fa-pinterest-square fa-fw"></i>&nbsp;python</a></li>
-                <li class="nav_li"><a href="./html/js.php"><i class="fa fa-book fa-fw"></i>&nbsp;javascript</a></li>
-                <li class="nav_li"><a href="./html/contact.php"><i class="fa fa-pencil fa-fw"></i>&nbsp;contact</a></li>
-            </ul>
-        </nav>
+        <?php include('./php/unify_navigation.php');?>
         <div id="left_part" class="content_div cont_left">
             <section class="left_side aboutCreater">
                 <header>
@@ -68,12 +56,10 @@
         <div id="right_part" class="content_div cont_right">
         <?php
         include('./php/connection.php');
-        include('./php/index_display.php');?>
+        include('./php/essay_display.php');?>
         </div>
-        <footer>
-            <p><i>&copy Copyright 2015 Design by darkless &nbsp; <a href="./html/login.php">Login</a></i></p>
-        </footer>
+        <?php include('./php/unify_footer.php');?>
     </div>
 </body>
-<script src="./js/main.js" type="text/javascript" charset="utf-8"></script>
+
 </html>

@@ -1,4 +1,4 @@
-<?php  
+<?php
  @session_start();
  if(!$_SESSION['username']){
     header('location: ../html/login.php');
@@ -16,8 +16,10 @@
     <style>
         fieldset{width: 80%; margin: 30px 0; padding: 30px;}
         label{float: left; width: 80px; font-size: 25px; font-weight: bold;}
+        select{font-size: 14px; padding: 5px;}
         [type="submit"]{width: 120px;}
-        #title{width: 80%; height: 18px; padding: 5px;}
+        #title{width: 85%; height: 18px; padding: 5px; border: 0; border-bottom: 2px solid #ccc; font-size: 16px;}
+        #title:focus{border: 0; border-bottom: 2px solid #ccc;}
 /*        #shadow, #essay{box-sizing: border-box; width: 80%; overflow: hidden; height: 325px; padding: 15px;}
         #shadow{ position: absolute; border-width: 0px; padding: 0px; visibility: hidden; }*/
     </style>
@@ -28,6 +30,8 @@
 <h1>文章管理</h1>
 <p>
     <a href="./console.php" title="">进入留言管理</a>
+    <br>
+    <a href="../index.php" title="">返回首页</a>
 </p>
 <!-- 已发表文章展示，最近发表的在前 -->
 <div class="show_title">
@@ -75,6 +79,15 @@
 <fieldset>
     <legend>发表文章</legend>
     <form action="./submit_essay.php" method="post" accept-charset="utf-8" onsubmit="return inputCheck(this);">
+    <p>
+        <label for="classify">分类：</label>
+        <select name="classify">
+            <option value="" selected="selected">请选择分类</option>
+            <option value="essaybook">主页文章</option>
+            <option value="jsbook">JavaScript文章</option>
+            <option value="pybook">Python文章</option>
+        </select>
+    </p>
     <p>
         <label for="title">标题：</label>
         <input id="title" type="text" name="title"  />        
