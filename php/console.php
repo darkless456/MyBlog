@@ -48,12 +48,12 @@
  ?>
  <fieldset style="width: 200px; padding: 20px;">
      <legend>回复本条留言</legend>
-     <form action="handle.php" method="post" accept-charset="utf-8" name="replyForm" id="reply">
+     <form action="./handle_msg.php" method="post" accept-charset="utf-8" name="replyForm" id="reply">
         <textarea class="replay" name="reply" rows="5" cols="40" style="resize: none;"><?=$get_array['reply']?></textarea>
         <p>
             <input type="hidden" name="id" value="<?=$get_array['id']?>" />
             <input type="submit" name="submit" value="回复">
-            <a href="handle.php?action=delete&id=<?=$get_array['id']?>" style="text-decoration: none; color: #000;">删除此留言</a>
+            <a href="handle_msg.php?action=delete&id=<?=$get_array['id']?>" style="text-decoration: none; color: #000;">删除此留言</a>
         </p>
      </form>
  </fieldset>

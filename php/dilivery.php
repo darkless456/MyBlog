@@ -50,8 +50,8 @@
         echo 'No.<b>',$get_title['eid'], '</b> /  Title: <b>', $get_title['title'], '</b>';
         echo '<br>Post at: ', date('Y-m-d H:m', $get_title['dilivery_time']);
         ?>
-        <form action="./delete_essay.php" method="post" accept-charset="utf-8">
-        <a href="delete_essay.php?action=delete&eid=<?=$get_title['eid']?>">Delete This</a>
+        <form action="./handle_essay.php" method="post" accept-charset="utf-8">
+        <a href="handle_essay.php?action=delete&eid=<?=$get_title['eid']?>">Delete This</a>
         </form>
         <?php
         echo "<hr>";
