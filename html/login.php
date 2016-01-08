@@ -36,7 +36,7 @@ if($_POST){
     <head>
         <meta charset="utf-8">
         <title>Post Success</title>
-        <meta http-equiv=refresh content="1;url='../php/dilivery.php'">
+        <meta http-equiv=refresh content="1;url='../php/console.php'">
     </head>
     <body>
         <p>
