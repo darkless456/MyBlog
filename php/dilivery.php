@@ -46,7 +46,7 @@
 
     $p = _get('p')? _get('p'): 1; //当前页码
     $offset = ($p-1)*$show_title_size; //偏移量
-    echo $offset;
+    // echo $offset;
 
     $select_title = mysql_query("SELECT eid, title, dilivery_time FROM essaybook ORDER BY eid DESC LIMIT $offset, $show_title_size;");
     // LIMITED $offset, $show_title_size
