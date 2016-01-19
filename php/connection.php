@@ -8,19 +8,19 @@
  * @Author: darkless
  * @Date:   2015-12-15 10:48:40
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-01-08 17:53:44
+ * @Last Modified time: 2016-01-19 23:17:31
  */
 // SAE MySQL
- // $hostname = SAE_MYSQL_HOST_M. ':'. SAE_MYSQL_PORT;
- // $dbuser = SAE_MYSQL_USER;
- // $dbpass = SAE_MYSQL_PASS;
- // $dbname = SAE_MYSQL_DB; 
+ $hostname = SAE_MYSQL_HOST_M. ':'. SAE_MYSQL_PORT;
+ $dbuser = SAE_MYSQL_USER;
+ $dbpass = SAE_MYSQL_PASS;
+ $dbname = SAE_MYSQL_DB; 
 
 // Local MySQL
- $hostname = 'localhost'. ':'. '3306';
- $dbuser = 'root';
- $dbpass = '';
- $dbname = 'myblog';
+ // $hostname = 'localhost'. ':'. '3306';
+ // $dbuser = 'root';
+ // $dbpass = '';
+ // $dbname = 'myblog';
 
  
  $link = @mysql_connect($hostname, $dbuser, $dbpass);
