@@ -8,11 +8,11 @@
  * @Author: darkless
  * @Date:   2015-12-15 12:14:26
  * @Last Modified by:   darkless
- * @Last Modified time: 2015-12-30 15:02:02
+ * @Last Modified time: 2016-01-11 18:12:54
  */
- $pagesize = 4;
+ $pagesize = 10;
  $gb_password = 123456;
  
- $show_title_size = 20;
+ $show_title_size = 10;
  ?>
  </html>

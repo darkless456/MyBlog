@@ -2,7 +2,7 @@
 * @Author: darkless
 * @Date:   2015-06-29 15:38:58
 * @Last Modified by:   darkless
-* @Last Modified time: 2016-01-08 14:56:44
+* @Last Modified time: 2016-01-18 22:29:22
 */
 
 
@@ -115,6 +115,17 @@ header p {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+span.readmore{
+    font-weight: bolder;
+    color: inherit;
+    cursor: pointer;
+}
+
 
 /* header style */
 
@@ -182,6 +193,10 @@ header#header {
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
+}
+
+a.readmore {
+    font-weight: bold;
 }
 
 

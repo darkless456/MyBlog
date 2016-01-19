@@ -72,7 +72,7 @@
             <form action="../php/submit_msg.php" id="post_msg" method="post" name="post_msg" accept-charset="utf-8" onsubmit="return inputCheck(this)">
                 <p>
                     <label for="nickname" class="label">Nickname</label>
-                    <input id="nickname2" type="text" class="input" placeholder="Please Input Nickname" name="nickname" />
+                    <input id="nickname2" type="text" class="input" placeholder="Please Input Nickname" name="nickname" autofocus/>
                 </p>
                 <p>
                     <label for="email" class="label">E-Mail</label>

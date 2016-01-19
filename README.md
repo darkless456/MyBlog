@@ -1,5 +1,14 @@
 # MyBlog -- Snow Halation
 
+###Jan 19 2016 Update
+* Add readmore button to show complete content at new tab
+* Fixed the quote of css and js files for readmore page
+
+
+###Jan 14 2016 Update
+* Add images upload for essay dilivering, use jquery's ajax function and form.js of ajaxSubmit, and display result in the infomation frame
+* Cut a piece charactors of too long content, display contents concisly
+
 ###Jan 8 2016 Update
 * Fixed multi mistakes for page redirect
 * Merge similar function of php scripts, use page mark variable 
@@ -11,9 +20,9 @@
 * Fixed some errors that running on SAE playform, include position of index, redirect page, and some small mistakes
 
 ###Jan 6 2016 Update
-* Ö÷Ò³ÎÄÕÂÓÉtxt¸ñÊ½´¢´æ×ªÎªMySQL±£´æ
-* Íê³É»ù±¾¹¦ÄÜµÄÁôÑÔ¹ÜÀíºÍ·¢²¼¹ÜÀíºóÌ¨
-* autoheightµÄ·¢±íÎÄ±¾¿ò
+* ä¸»é¡µæ–‡ç« ç”±txtæ ¼å¼å‚¨å­˜è½¬ä¸ºMySQLä¿å­˜
+* å®ŒæˆåŸºæœ¬åŠŸèƒ½çš„ç•™è¨€ç®¡ç†å’Œå‘å¸ƒç®¡ç†åå°
+* autoheightçš„å‘è¡¨æ–‡æœ¬æ¡†
 
 ###Dec 24 2015 Update
 * Use php for unify part of header, navigation, footer

@@ -62,7 +62,7 @@ if($_POST){
         </p>
         <p>
             <label for="">Password: </label>
-            <input type="password" name="password" class="password" placeholder="administrator password" />
+            <input type="password" name="password" class="password" placeholder="admin password" autofocus />
         </p>
         <p>
             <input type="submit" name="submit" class="submit" value="Login" />

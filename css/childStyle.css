@@ -2,7 +2,7 @@
 * @Author: darkless
 * @Date:   2015-07-21 17:33:08
 * @Last Modified by:   darkless
-* @Last Modified time: 2016-01-08 15:52:46
+* @Last Modified time: 2016-01-15 10:22:54
 */
 
 h3 {
@@ -16,11 +16,6 @@ ol {
     list-style-type: none;
     /*overflow: hidden;
     */
-}
-
-a {
-    text-decoration: none;
-    color: #000;
 }
 
 .dis_btn {

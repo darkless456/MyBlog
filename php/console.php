@@ -10,6 +10,8 @@
     <head>
         <meta charset="utf-8">
         <title>Console</title>
+        <script src="../js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/jquery.form.js" type="text/javascript" charset="utf-8"></script>
     </head>
 
  <body>
@@ -55,7 +57,7 @@
         <p>
             <input type="hidden" name="id" value="<?=$get_array['id']?>" />
             <input type="submit" name="submit" value="回复">
-            <a href="handle_msg.php?action=delete&id=<?=$get_array['id']?>" style="text-decoration: none; color: #000;">删除此留言</a>
+            <a href="handle_msg.php?action=delete&id=<?=$get_array['id']?>" class="delete_msg">删除</a>
         </p>
      </form>
  </fieldset>
@@ -84,4 +86,14 @@
  }
  ?>
  </body>
+ <script>
+ $(function(){
+    $('a.delete_msg').click(function(){
+        var yes_no = confirm('是否删除');
+        if(yes_no == false){
+            return false;
+        }
+    })
+ })
+ </script>
  </html>
