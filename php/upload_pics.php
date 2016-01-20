@@ -68,8 +68,8 @@ if(_get('act') == 'del_img'){
 
     }
 
-    $s2 = new saeStorge();
-    $s_img = new saeImage();
+    $s2 = new SaeStorge();
+    $s_img = new SaeImage();
 
     $img_data = file_get_contents($img);
     $s_img->setData($img_data); //装进容器
