@@ -3,7 +3,7 @@
  * @Author: darkless
  * @Date:   2016-01-06 14:40:09
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-01-20 21:52:09
+ * @Last Modified time: 2016-01-20 21:57:12
 */
 // include('./connection.php');
 if($is_mark == 'index'){
@@ -28,7 +28,7 @@ if(!$select_all){
 while($get_all = mysql_fetch_array($select_all)){
     $opt_str = $get_all['essay'];
     if(strlen($opt_str) >= 400){
-        $essay_opt = mb_substr(htmlspecialchars_decode($opt_str), 0, 300, 'utf-8'). '<br><a class="readmore" target="_blank" href="'.$show_dir.'handle_essay.php?action=show&'.$id_type.'='. $get_all[$id_type]. '">...read more</a><br>';
+        $essay_opt = mb_substr(htmlspecialchars_decode($opt_str), 0, 300, 'utf-8'). '<p><a class="readmore" target="_blank" href="'.$show_dir.'handle_essay.php?action=show&'.$id_type.'='. $get_all[$id_type]. '">...read more</a></p>';
         echo "<section class='content_li'><header><h2>", $get_all['title'], "</h2></header>";
         echo "<article class='content'>", $essay_opt, "</article></section>";            
     } else{
