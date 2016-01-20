@@ -8,13 +8,13 @@
  * @Author: darkless
  * @Date:   2015-12-15 10:48:40
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-01-20 21:53:52
+ * @Last Modified time: 2016-01-20 21:54:43
  */
 // SAE MySQL
- // $hostname = SAE_MYSQL_HOST_M. ':'. SAE_MYSQL_PORT;
- // $dbuser = SAE_MYSQL_USER;
- // $dbpass = SAE_MYSQL_PASS;
- // $dbname = SAE_MYSQL_DB; 
+ $hostname = SAE_MYSQL_HOST_M. ':'. SAE_MYSQL_PORT;
+ $dbuser = SAE_MYSQL_USER;
+ $dbpass = SAE_MYSQL_PASS;
+ $dbname = SAE_MYSQL_DB; 
 
 // Local MySQL
  // $hostname = 'localhost'. ':'. '3306';
