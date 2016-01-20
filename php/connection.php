@@ -8,7 +8,7 @@
  * @Author: darkless
  * @Date:   2015-12-15 10:48:40
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-01-20 21:52:23
+ * @Last Modified time: 2016-01-20 21:53:52
  */
 // SAE MySQL
  // $hostname = SAE_MYSQL_HOST_M. ':'. SAE_MYSQL_PORT;
@@ -17,10 +17,10 @@
  // $dbname = SAE_MYSQL_DB; 
 
 // Local MySQL
- $hostname = 'localhost'. ':'. '3306';
- $dbuser = 'root';
- $dbpass = '';
- $dbname = 'myblog';
+ // $hostname = 'localhost'. ':'. '3306';
+ // $dbuser = 'root';
+ // $dbpass = '';
+ // $dbname = 'myblog';
 
  
  $link = @mysql_connect($hostname, $dbuser, $dbpass);
