@@ -1,6 +1,4 @@
 <?php
-// print_r($_FILES);
-// exit;
 
 if(_get('act') == 'del_img'){
 
@@ -15,7 +13,7 @@ if(_get('act') == 'del_img'){
             die('超过php.ini允许的大小');
             break;
 
-        case UPLOAD_ERR_FROM_SIZE:
+        case UPLOAD_ERR_FORM_SIZE:
             die('超过HTML表单中MAX_FILE_SIZE的大小');
             break;
 

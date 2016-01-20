@@ -8,7 +8,7 @@
  * @Author: darkless
  * @Date:   2015-12-15 10:48:40
  * @Last Modified by:   darkless
- * @Last Modified time: 2016-01-19 23:17:31
+ * @Last Modified time: 2016-01-20 19:39:15
  */
 // SAE MySQL
  $hostname = SAE_MYSQL_HOST_M. ':'. SAE_MYSQL_PORT;

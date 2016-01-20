@@ -163,8 +163,8 @@ $(function(){
                 img_upload.confirm.val('Uploading...');
             },
             success: function(data, status){
-                console.log('type:' + typeof(data));
-                return false;
+                // console.log('type:' + typeof(data));
+                // return false;
                 //data: file_name,file_caption,file_path,file_size(MB)
                 img_upload.info1.html(status + '/ ' + data.img_name + '(' + data.img_size + ')' + '<br>' + '<span class="del_img" rel="' + data.img_path + '">删除</span>');
                 img_upload.show.html('<img src="' + data.img_path + '" alt="' + data.img_caption + '" width="256">');
