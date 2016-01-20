@@ -45,22 +45,22 @@ if(_get('act') == 'del_img'){
     list($img_width, $img_height, $img_type, $img_attr) = getimagesize($img_tmp);
     $img_caption = $_POST['caption'];
 
-    $img_dir = '../img/';
+    // $img_dir = '../img/';
 
     switch($img_type){
         case IMAGETYPE_JPEG:
             $img = imagecreatefromjpeg($img_tmp) or die('image type is not supported');
-            imagejpeg($img, $img_dir. ''. $img_name);
+            // imagejpeg($img, $img_dir. ''. $img_name);
             break;
 
         case IMAGETYPE_GIF:
             $img = imagecreatefromgif($img_tmp) or die('image type is not supported');
-            imagegif($img, $img_dir. ''. $img_name);
+            // imagegif($img, $img_dir. ''. $img_name);
             break;
 
         case IMAGETYPE_PNG:
             $img = imagecreatefrompng($img_tmp) or die('image type is not supported');
-            imagepng($img, $img_dir. ''. $img_name);
+            // imagepng($img, $img_dir. ''. $img_name);
             break;
 
         default:
@@ -68,7 +68,18 @@ if(_get('act') == 'del_img'){
 
     }
 
-    $img_path = $img_dir. ''. $img_name;
+    $s2 = new saeStorge();
+    $s_img = new saeImage();
+
+    $img_data = file_get_contents($img);
+    $s_img->setData($img_data); //装进容器
+    $new_data = $s_img->exec(); //转为二进制数据
+
+    $s2->write('storgeimg', $img_name, $new_data);
+    $img_path = $s2->getUrl('strogeimg', $img_name);
+
+
+    // $img_path = $img_dir. ''. $img_name;
     $img_size = round($img_size/1024, 2). 'KB';
 
     imagedestroy($img);
