@@ -82,7 +82,7 @@ if(_get('act') == 'del_img'){
     // $img_path = $img_dir. ''. $img_name;
     $img_size = round($img_size/1024, 2). 'KB';
 
-    imagedestroy($img);
+    // imagedestroy($img);
 
     $result = array(
         'img_name'=>$img_name,
