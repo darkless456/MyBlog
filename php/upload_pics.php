@@ -68,15 +68,15 @@ if(_get('act') == 'del_img'){
 
     }
 
-    $s2 = new SaeStorge();
+    $s2 = new SaeStorage();
     $s_img = new SaeImage();
 
     $img_data = file_get_contents($img);
     $s_img->setData($img_data); //装进容器
     $new_data = $s_img->exec(); //转为二进制数据
 
-    $s2->write('storgeimg', $img_name, $new_data);
-    $img_path = $s2->getUrl('strogeimg', $img_name);
+    $s2->write('storageimg', $img_name, $new_data);
+    $img_path = $s2->getUrl('storageimg', $img_name);
 
 
     // $img_path = $img_dir. ''. $img_name;
