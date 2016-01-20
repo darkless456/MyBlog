@@ -47,31 +47,31 @@ if(_get('act') == 'del_img'){
 
     // $img_dir = '../img/';
 
-    switch($img_type){
-        case IMAGETYPE_JPEG:
-            $img = imagecreatefromjpeg($img_tmp) or die('image type is not supported');
-            // imagejpeg($img, $img_dir. ''. $img_name);
-            break;
+    // switch($img_type){
+    //     case IMAGETYPE_JPEG:
+    //         $img = imagecreatefromjpeg($img_tmp) or die('image type is not supported');
+    //         // imagejpeg($img, $img_dir. ''. $img_name);
+    //         break;
 
-        case IMAGETYPE_GIF:
-            $img = imagecreatefromgif($img_tmp) or die('image type is not supported');
-            // imagegif($img, $img_dir. ''. $img_name);
-            break;
+    //     case IMAGETYPE_GIF:
+    //         $img = imagecreatefromgif($img_tmp) or die('image type is not supported');
+    //         // imagegif($img, $img_dir. ''. $img_name);
+    //         break;
 
-        case IMAGETYPE_PNG:
-            $img = imagecreatefrompng($img_tmp) or die('image type is not supported');
-            // imagepng($img, $img_dir. ''. $img_name);
-            break;
+    //     case IMAGETYPE_PNG:
+    //         $img = imagecreatefrompng($img_tmp) or die('image type is not supported');
+    //         // imagepng($img, $img_dir. ''. $img_name);
+    //         break;
 
-        default:
-            die('img type is not supported');
+    //     default:
+    //         die('img type is not supported');
 
-    }
+    // }
 
     $s2 = new SaeStorage();
     $s_img = new SaeImage();
 
-    $img_data = file_get_contents($img);
+    $img_data = file_get_contents($img_tmp);
     $s_img->setData($img_data); //装进容器
     $new_data = $s_img->exec(); //转为二进制数据
 
