@@ -1,4 +1,4 @@
-# MyBlog -- Snow Halation
+# [MyBlog -- Snow Halation](http://myhalation.applinzi.com/)
 
 ###Jan 19 2016 Update
 * Add readmore button to show complete content at new tab
@@ -93,3 +93,19 @@
 ####Jul 9 2015 Update
 * Use CSS to change the web interface, include font, distance, etc.
 * Use Ajax function to read blog content, etc python, javascript and blog.
+
+
+###INDEX
+![index](http://img.hoop8.com/attachments/1603/9293030984498.png)
+
+
+###LOGIN
+![login](http://img.hoop8.com/attachments/1603/9583030984498.png)
+
+
+###MESSAGE
+![message](http://img.hoop8.com/attachments/1603/9923030984498.png)
+
+
+###CONSOLE
+![console](http://img.hoop8.com/attachments/1603/0213030984498.png)
