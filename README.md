@@ -96,7 +96,7 @@
 
 
 ###INDEX
-![index](http://img.hoop8.com/attachments/1603/9293030984498.png)
+![index](http://img.hoop8.com/attachments/1603/2033030984498.jpg)
 
 
 ###LOGIN
@@ -104,7 +104,7 @@
 
 
 ###MESSAGE
-![message](http://img.hoop8.com/attachments/1603/9923030984498.png)
+![message](http://img.hoop8.com/attachments/1603/2213030984498.jpg)
 
 
 ###CONSOLE
