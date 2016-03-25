@@ -1,4 +1,4 @@
-# [MyBlog -- Snow Halation](http://myhalation.applinzi.com/)
+# [MyBlog -- Snow Halation](http://snowhalation.ga/)
 
 ###Jan 19 2016 Update
 * Add readmore button to show complete content at new tab

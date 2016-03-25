@@ -17,10 +17,16 @@
  // $dbname = SAE_MYSQL_DB; 
 
 // Local MySQL
+// $hostname = 'localhost'. ':'. '3306';
+// $dbuser = 'root';
+// $dbpass = '';
+// $dbname = 'myblog';
+ 
+ // Weixiang MySQL
  $hostname = 'localhost'. ':'. '3306';
- $dbuser = 'root';
- $dbpass = '';
- $dbname = 'myblog';
+ $dbuser = 'iznbbfpp_blog';
+ $dbpass = 'cZN60!n5';
+ $dbname = 'iznbbfpp_blogdata';
 
  
  $link = @mysql_connect($hostname, $dbuser, $dbpass);
